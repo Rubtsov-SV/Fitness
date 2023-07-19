@@ -1,0 +1,56 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 15px;
+}
+
+.page-header__phone {
+  font-family: $ff-alumni;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: 0.02em;
+
+  color: $color-default-white;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    padding-top: 40px;
+  }
+
+  .page-header__logo {
+    img {
+      width: 82px;
+      height: 17px;
+    }
+  }
+
+  .page-header__phone {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    padding-top: 30px;
+  }
+
+  .page-header__logo {
+    img {
+      width: 122px;
+      height: 44px;
+    }
+  }
+
+  .page-header__phone {
+    font-size: 26px;
+    line-height: 31px;
+
+    letter-spacing: 0.03em;
+  }
+}

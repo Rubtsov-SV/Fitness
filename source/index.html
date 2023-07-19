@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>ProjectName</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+    <svg style="display: none">
+      <symbol id="vk" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.5 0C5.59692 0 0 5.59692 0 12.5C0 19.4031 5.59692 25 12.5 25C19.4031 25 25 19.4031 25 12.5C25 5.59692 19.4031 0 12.5 0Z" fill="white"/>
+        <path d="M13.7227 15.0518C14.1654 14.9087 14.7322 15.9964 15.3355 16.4127C15.7884 16.728 16.1352 16.6599 16.1352 16.6599L17.7434 16.6368C17.7434 16.6368 18.5838 16.5849 18.1865 15.9172C18.1536 15.8616 17.9536 15.4222 16.9895 14.5179C15.9815 13.5718 16.1181 13.7251 17.3317 12.0896C18.0712 11.0927 18.3671 10.4838 18.2745 10.2244C18.1856 9.97486 17.6424 10.0397 17.6424 10.0397L15.8305 10.0522C15.6541 10.0527 15.5045 10.1073 15.4365 10.2907C15.4351 10.2925 15.1489 11.0621 14.7674 11.7164C13.9612 13.1005 13.6394 13.1741 13.506 13.0875C13.1999 12.887 13.2773 12.2832 13.2773 11.8539C13.2773 10.5125 13.4773 9.9531 12.8855 9.80863C12.6878 9.76047 12.5433 9.72898 12.0391 9.72435C11.3945 9.71463 10.8472 9.72435 10.5369 9.8767C10.3309 9.97996 10.173 10.2064 10.2688 10.2194C10.3892 10.2356 10.6592 10.2934 10.8036 10.4907C10.9893 10.7463 10.9838 11.3191 10.9838 11.3191C10.9838 11.3191 11.0898 12.8986 10.7337 13.0944C10.4892 13.2287 10.1549 12.9546 9.43578 11.6979C9.06858 11.0552 8.79121 10.3448 8.79121 10.3448C8.79121 10.3448 8.7375 10.2129 8.64026 10.1406C8.52449 10.055 8.36243 10.0277 8.36243 10.0277L6.64265 10.0388C6.64265 10.0388 6.38427 10.0462 6.28935 10.1601C6.20507 10.261 6.2824 10.4694 6.2824 10.4694C6.2824 10.4694 7.62942 13.6557 9.15471 15.2606C10.5531 16.734 12.1423 16.6363 12.1423 16.6363H12.8624C12.8624 16.6363 13.0795 16.6113 13.1907 16.4918C13.2944 16.3807 13.2898 16.1719 13.2898 16.1719C13.2898 16.1719 13.2754 15.1953 13.7227 15.0518Z" fill="#030A1A"/>
+      </symbol>
+
+      <symbol id="ok" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.5 0C5.59692 0 0 5.59692 0 12.5C0 19.4031 5.59692 25 12.5 25C19.4031 25 25 19.4031 25 12.5C25 5.59692 19.4031 0 12.5 0Z" fill="white"/>
+        <path d="M12.6803 6.88903C13.5788 6.88903 14.3095 7.64334 14.3095 8.57085C14.3095 9.49557 13.5788 10.2499 12.6803 10.2499C11.7818 10.2499 11.0511 9.49557 11.0511 8.57085C11.0511 7.64334 11.7818 6.88903 12.6803 6.88903ZM12.6803 12.6301C14.8507 12.6301 16.6152 10.8086 16.6152 8.57085C16.6152 6.33029 14.8507 4.50879 12.6803 4.50879C10.5098 4.50879 8.748 6.33029 8.748 8.57085C8.748 10.8086 10.5098 12.6301 12.6803 12.6301ZM14.2716 15.9435C15.0726 15.7535 15.8439 15.4266 16.5557 14.9657C17.0942 14.6164 17.2566 13.8817 16.9183 13.3258C16.5773 12.767 15.8683 12.5994 15.327 12.9514C13.7168 13.9962 11.6437 13.9962 10.0308 12.9514C9.49223 12.5994 8.78047 12.767 8.44219 13.3258C8.1039 13.8817 8.26628 14.6164 8.80483 14.9657C9.51659 15.4266 10.2879 15.7535 11.089 15.9435L8.88873 18.212C8.43948 18.6757 8.43948 19.43 8.88873 19.8938C9.11606 20.1257 9.40834 20.243 9.70332 20.243C9.99831 20.243 10.2933 20.1257 10.5206 19.8938L12.6803 17.6644L14.8426 19.8938C15.2918 20.3603 16.0198 20.3603 16.4718 19.8938C16.921 19.43 16.921 18.6757 16.4718 18.212L14.2716 15.9435Z" fill="#030A1A"/>
+      </symbol>
+
+      <symbol id="reddit" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.5 0C5.59692 0 0 5.59692 0 12.5C0 19.4031 5.59692 25 12.5 25C19.4031 25 25 19.4031 25 12.5C25 5.59692 19.4031 0 12.5 0Z" fill="white"/>
+        <path d="M13.851 5.55566C13.4056 5.55566 12.9877 5.7816 12.7196 6.10741C12.4516 6.43323 12.3038 6.8304 12.1962 7.24897C12.0252 7.92201 11.9724 8.66877 11.9597 9.34181C10.7081 9.42505 9.57457 9.79606 8.63316 10.3692C8.2511 10.0481 7.79095 9.86978 7.3498 9.87454C6.84743 9.87929 6.3704 10.0957 6.01579 10.5404C5.33823 11.3895 5.41632 12.7784 6.20154 13.6036C6.15299 13.8581 6.1171 14.1197 6.1171 14.3837C6.1171 17.1805 8.9751 19.4446 12.5001 19.4446C16.0251 19.4446 18.8831 17.1781 18.8831 14.3837C18.8831 14.1197 18.8472 13.8581 18.7987 13.6036C19.5839 12.7784 19.662 11.3895 18.9844 10.5404C18.6298 10.0957 18.1528 9.87929 17.6504 9.87454C17.2093 9.86978 16.7491 10.0481 16.3671 10.3692C15.4299 9.79843 14.3027 9.42743 13.0574 9.34181C13.0742 8.72109 13.1186 8.07659 13.2431 7.59143C13.3212 7.28702 13.4141 7.06584 13.5133 6.94455C13.6125 6.82326 13.6843 6.77332 13.851 6.77332C14.212 6.77332 14.2584 6.88985 14.4758 7.17286C14.5856 7.31556 14.7122 7.49393 14.9148 7.66754C15.1175 7.84115 15.4172 7.99098 15.7423 7.99098V6.77332C15.6515 6.77332 15.6346 6.77094 15.5734 6.71624C15.5122 6.66154 15.4278 6.5355 15.3032 6.37378C15.0542 6.04796 14.5708 5.55566 13.851 5.55566ZM17.3634 5.66982C16.5233 5.66982 15.8436 6.43561 15.8436 7.38215C15.8436 8.32869 16.5233 9.09448 17.3634 9.09448C18.2034 9.09448 18.8831 8.32869 18.8831 7.38215C18.8831 6.43561 18.2034 5.66982 17.3634 5.66982ZM17.3634 6.27865C17.9037 6.27865 18.3428 6.77332 18.3428 7.38215C18.3428 7.99098 17.9037 8.48565 17.3634 8.48565C16.823 8.48565 16.3839 7.99098 16.3839 7.38215C16.3839 6.77332 16.823 6.27865 17.3634 6.27865ZM12.5001 10.2931C15.4911 10.2931 18.0219 12.1695 18.0219 14.3837C18.0219 16.6002 15.4911 18.4742 12.5001 18.4742C9.50913 18.4742 6.9783 16.6002 6.9783 14.3837C6.9783 12.1695 9.50913 10.2931 12.5001 10.2931ZM7.36669 10.8449C7.51655 10.8472 7.67275 10.8853 7.82262 10.959C7.28015 11.4228 6.84955 11.9555 6.55615 12.5572C6.35351 12.0863 6.40839 11.4989 6.65746 11.1873C6.83899 10.959 7.09017 10.8425 7.36669 10.8449ZM17.6335 10.8449C17.91 10.8425 18.1612 10.959 18.3428 11.1873C18.5918 11.4989 18.6467 12.0863 18.4441 12.5572C18.1507 11.9555 17.7201 11.4228 17.1776 10.959C17.3275 10.8853 17.4837 10.8472 17.6335 10.8449ZM10.3387 12.3669C9.79831 12.3669 9.35927 12.8616 9.35927 13.4704C9.35927 14.0793 9.79831 14.5739 10.3387 14.5739C10.879 14.5739 11.3181 14.0793 11.3181 13.4704C11.3181 12.8616 10.879 12.3669 10.3387 12.3669ZM14.6616 12.3669C14.1212 12.3669 13.6821 12.8616 13.6821 13.4704C13.6821 14.0793 14.1212 14.5739 14.6616 14.5739C15.2019 14.5739 15.641 14.0793 15.641 13.4704C15.641 12.8616 15.2019 12.3669 14.6616 12.3669ZM9.81519 16.115C10.1593 16.9165 11.2231 17.6942 12.5001 17.6942C13.7771 17.6942 14.8579 16.9165 15.2019 16.115C14.5771 16.5693 13.5914 16.8761 12.5001 16.8761C11.4088 16.8761 10.44 16.5693 9.81519 16.115Z" fill="#030A1A"/>
+      </symbol>
+
+      <symbol id="rub" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.86667 13.4864V8.09524H4.66667V13.4864H9.8V16.3435H4.66667V20H1.86667V16.3435H0V13.4864H1.86667Z" fill="#102654"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.63333 2.85714H4.66667V8.09524H8.63333C10.0509 8.09524 11.2 6.92265 11.2 5.47619C11.2 4.02973 10.0509 2.85714 8.63333 2.85714ZM1.86667 0V10.9524H8.63333C11.5973 10.9524 14 8.50061 14 5.47619C14 2.45177 11.5973 0 8.63333 0H1.86667Z" fill="#102654"/>
+        <path d="M1.86667 8.09524H0V10.9524H1.86667V8.09524Z" fill="#102654"/>
+      </symbol>
+
+    </svg>
+
+    <div class="wrapper">
+      <div class="header-wrapper container">
+        <header class="page-header">
+          <a href="#" class="page-header__logo">
+            <img src="img/svg/logo.svg" width="69" height="24" alt="Логотип Supergym">
+          </a>
+          <a class="page-header__phone" href="tel:88005555555" aria-label="Позвоните нам">
+            8-800-555-55-55
+          </a>
+        </header>
+        <div class="banner">
+          <div class="banner__text">
+            <span>Омск</span>
+            <h1>Фитнес центр</h1>
+            <ul class="banner__services-list">
+              <li class="banner__services-item">Тренажёрный зал</li>
+              <li class="banner__services-item">Групповые занятия</li>
+              <li class="banner__services-item">Кардио-зона</li>
+            </ul>
+            <a class="banner-scroll button" href="#subscription">Купить абонемент</a>
+          </div>
+
+          <picture>
+            <!-- <source srcset="img/banner-photo.webp 1x, img/banner-photo@2x.webp 2x" type="image/webp"> -->
+            <source media="(min-width:1200px)" srcset="img\banner-photo-desktop.jpg 1x, img\banner-photo-desktop@2x.jpg 2x" width="500" height="556">
+            <source media="(min-width:768px)" src="img/banner-photo-tablet.jpg" srcset="img/banner-photo-tablet@2x.jpg 2x" width="324" height="390" alt="Герой спортзала">
+            <img  class="banner__img" src="img/banner-photo-tablet.jpg" srcset="img/banner-photo-tablet@2x.jpg 2x" width="324" height="390" alt="Герой спортзала">
+          </picture>
+        </div>
+      </div>
+
+      <main>
+
+        <section class="info" id="info">
+          <div class="info__text">
+            <h2>Тренажерный зал</h2>
+            <b>Просторный зал площадью 900 кв/м</b>
+            <p>
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p class="info__desktop">
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+
+          <picture>
+            <!-- <source srcset="img/photo-gym.webp 1x, img/photo-gym@2x.webp 2x" type="image/webp"> -->
+            <source media="(min-width: 1200px)" srcset="img/photo-gym-desktop.jpg 1x, img/photo-gym-desktop@2x.jpg 2x">
+            <img class="info__img" src="img/photo-gym.jpg" srcset="img/photo-gym@2x.jpg 2x" width="660" height="401" alt="Наш просторный зал и тренажеры">
+          </picture>
+
+          <div class="info__video">
+            <div class="info__video-player" id="video-player">
+              <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="info__video-cover" id="video-img">
+              <picture>
+                <!-- <source srcset="img/gym-video.webp 1x, img/gym-video@2x.webp 2x" type="image/webp"> -->
+                <img src="img/video-gym.jpg" srcset="img/video-gym@2x.jpg 2x" width="364" height="228" alt="Видеоэкскурсия по нашему тренажерному залу">
+              </picture>
+              <button class="info__video-button" id="video-button" type="button" aria-label="Посмотреть видео"></button>
+            </div>
+          </div>
+        </section>
+
+        <div class="page-wrapper page-wrapper--subscription">
+          <section class="subscription" id="subscription">
+            <div class="subscription__wrapper container">
+              <h2>Абонементы</h2>
+              <div class="subscription__term">
+                <ul class="subscription__term-list">
+                  <li class="subscription__term-item">
+                    <button class="subscription__term-button subscription__term-button--active" type="button">1 месяц</button>
+                  </li>
+                  <li class="subscription__term-item">
+                    <button class="subscription__term-button" type="button">6 месяцев</button>
+                  </li>
+                  <li class="subscription__term-item">
+                    <button class="subscription__term-button" type="button">12 месяцев</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="subscription__offer offer">
+                <ul class="offer__list offer__list--active">
+                  <li class="offer__item">
+                    <h3>C тренером</h3>
+                    <p class="offer__term">12 занятий</p>
+                    <p class="offer__price" data-price="5000">5000
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+
+                  <li class="offer__item">
+                    <h3>Дневной</h3>
+                    <p class="offer__term">с 8:00 до 17:00 </p>
+                    <p class="offer__price" data-price="1700">1700
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+
+                  <li class="offer__item">
+                    <h3>Полный день</h3>
+                    <p class="offer__term">с 8:00 до 22:00</p>
+                    <p class="offer__price" data-price="2700">2700
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg></p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+
+                <ul class="offer__list">
+                  <li class="offer__item">
+                    <h3>C тренером</h3>
+                    <p class="offer__term">12 занятий</p>
+                    <p class="offer__price" data-price="4500">4500
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+
+                  <li class="offer__item">
+                    <h3>Дневной</h3>
+                    <p class="offer__term">с 8:00 до 17:00 </p>
+                    <p class="offer__price" data-price="1400">1400
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+
+                  <li class="offer__item">
+                    <h3>Полный день</h3>
+                    <p class="offer__term">с 8:00 до 22:00</p>
+                    <p class="offer__price" data-price="2400">2400
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+
+                <ul class="offer__list">
+                  <li class="offer__item">
+                    <h3>C тренером</h3>
+                    <p class="offer__term">12 занятий</p>
+                    <p class="offer__price" data-price="4100">4100
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+
+                  <li class="offer__item">
+                    <h3>Дневной</h3>
+                    <p class="offer__term">с 8:00 до 17:00 </p>
+                    <p class="offer__price" data-price="1200">1200
+                      <svg class="offer__rub" width="24" height="33">
+                        <use xlink:href="#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+
+                  <li class="offer__item">
+                    <h3>Полный день</h3>
+                    <p class="offer__term">с 8:00 до 22:00</p>
+                    <p class="offer__price" data-price="2200">2200<svg class="offer__rub" width="24" height="33">
+                      <use xlink:href="#rub"></use>
+                    </svg>
+                    </p>
+                    <a class="offer__button button" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper container">
+          <ul class="page-footer__nav-list">
+            <li class="page-footer__nav-item page-footer__nav-item--logo">
+              <a class="page-footer__nav-link">
+                <img src="img/svg/logo.svg" width="89" height="20" alt="Логотип Supergym">
+              </a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#info">Услуги</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#subscription">Абонементы</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#discount">Акции</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#trainers">Тренеры</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">Расписание</a>
+            </li>
+          </ul>
+          <ul class="page-footer__networks">
+            <li>
+              <a class="page-footer__network-item" href="#" aria-label="Наша страничка в VK">
+                <svg class="page-footer__icon" width="25" height="25">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="page-footer__network-item" href="#" aria-label="Наш профиль в Одноклассниках">
+                <svg class="page-footer__icon" width="25" height="25">
+                  <use xlink:href="#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="page-footer__network-item" href="#" aria-label="Наша страничка в Reddit">
+                <svg class="page-footer__icon" width="25" height="25">
+                  <use xlink:href="#reddit"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
