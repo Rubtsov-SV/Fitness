@@ -1,0 +1,181 @@
+.games {
+  margin-top: 70px;
+}
+
+.games__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 292px;
+  margin-top: 70px;
+  background-color: $games-color;
+  color: $color-default-white;
+}
+
+.games__block{
+  display: flex;
+  margin-top: 50px;
+
+  h2 {
+    font-family: $ff-alumni;
+    font-size: 48px;
+    line-height: 46px;
+    margin: 0;
+    margin-right: 29px;
+
+    width: 120px;
+  }
+}
+
+.games__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.games__item-title {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.games__date {
+  display: flex;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 34px;
+    left: 0;
+    background-color: $color-default-white;
+  }
+}
+.games__date-info {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 13px;
+  margin: 0;
+}
+.games__date-number {
+  width: 26px;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.games__crossfit {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 36px;
+}
+
+.games__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 202px;
+  height: 39px;
+  font-size: 10px;
+  line-height: 11px;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+
+.games__img {
+  width: 290px;
+  height: 292px;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet) {
+  .games {
+    display: flex;
+    margin-top: 100px;
+  }
+
+  .games__img {
+    width: 386px;
+  }
+
+  .games__info {
+    flex: 1 0;
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .games {
+    margin-top: 120px;
+  }
+
+  .games__img {
+    width: 660px;
+    height: 500px;
+  }
+
+  .games__info {
+    height: 500px;
+    padding-top: 85px;
+  }
+
+  .games__block{
+
+    margin-top: 0;
+    margin-bottom: 23px;
+
+    h2 {
+      font-size: 82px;
+      line-height: 78px;
+      margin: 0;
+      margin-right: 50px;
+
+      width: 201px;
+    }
+  }
+
+  .games__item-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .games__date-info {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .games__date-number {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 7px;
+    margin-left: 5px;
+  }
+
+  .games__button {
+    width: 343px;
+    height: 67px;
+    font-size: 12px;
+    line-height: 14px;
+    box-shadow: inset 0 0 0 4px #fff;
+  }
+
+  .games__date {
+
+    &::after {
+      bottom: 55px;
+      left: 0;
+    }
+  }
+
+  .games__crossfit {
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: -60px;
+    margin-bottom: 55px;
+  }
+}

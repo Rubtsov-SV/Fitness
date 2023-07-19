@@ -2227,6 +2227,191 @@ button,
     width: 100%;
   }
 }
+.games {
+  margin-top: 70px;
+}
+
+.games__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 292px;
+  margin-top: 70px;
+  background-color: #ED0233;
+  color: #ffffff;
+}
+
+.games__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+.games__block h2 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 48px;
+  line-height: 46px;
+  margin: 0;
+  margin-right: 29px;
+  width: 120px;
+}
+
+.games__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.games__item-title {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.games__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.games__date::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 34px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.games__date-info {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 13px;
+  margin: 0;
+}
+
+.games__date-number {
+  width: 26px;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.games__crossfit {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 36px;
+}
+
+.games__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 202px;
+  height: 39px;
+  font-size: 10px;
+  line-height: 11px;
+  -webkit-box-shadow: inset 0 0 0 2px #fff;
+          box-shadow: inset 0 0 0 2px #fff;
+}
+
+.games__img {
+  width: 290px;
+  height: 292px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .games {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+  }
+  .games__img {
+    width: 386px;
+  }
+  .games__info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0;
+            flex: 1 0;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .games {
+    margin-top: 120px;
+  }
+  .games__img {
+    width: 660px;
+    height: 500px;
+  }
+  .games__info {
+    height: 500px;
+    padding-top: 85px;
+  }
+  .games__block {
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+  .games__block h2 {
+    font-size: 82px;
+    line-height: 78px;
+    margin: 0;
+    margin-right: 50px;
+    width: 201px;
+  }
+  .games__item-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .games__date-info {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .games__date-number {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 7px;
+    margin-left: 5px;
+  }
+  .games__button {
+    width: 343px;
+    height: 67px;
+    font-size: 12px;
+    line-height: 14px;
+    -webkit-box-shadow: inset 0 0 0 4px #fff;
+            box-shadow: inset 0 0 0 4px #fff;
+  }
+  .games__date::after {
+    bottom: 55px;
+    left: 0;
+  }
+  .games__crossfit {
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: -60px;
+    margin-bottom: 55px;
+  }
+}
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
