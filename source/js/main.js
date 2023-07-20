@@ -62,7 +62,7 @@ videoButton.addEventListener('click', ()=> {
   video.src += '?autoplay=1';
 });
 
-// Табы fбонементов
+// Табы абонементов
 
 const subscriptionButton = document.querySelectorAll('.subscription__term-button');
 const offerList = document.querySelectorAll('.offer__list');
@@ -97,3 +97,27 @@ if (offerList) {
     });
   });
 }
+
+// Слайдер тренера
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.trainers__button-next',
+    prevEl: '.trainers__button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 40,
+    },
+  },
+});

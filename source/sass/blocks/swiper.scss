@@ -1,0 +1,64 @@
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 52%;
+
+  width: 16px;
+  height: 32px;
+  padding: 0;
+
+  font: inherit;
+
+  color: $price-shadow-color;
+  background: center no-repeat;
+
+  border: none;
+  opacity: 1;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.swiper-button-prev {
+  left: 0;
+  background-image: url("../img/svg/icon-prev.svg");
+}
+
+.swiper-button-next {
+  right: 0;
+  background-image: url("../img/svg/icon-next.svg");
+}
+
+@media (min-width: $desktop) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 55%;
+
+    width: 16px;
+    height: 32px;
+  }
+
+  .review__list {
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 54%;
+    }
+
+    .swiper-button-prev {
+      left: -32px;
+    }
+
+    .swiper-button-next {
+      right: -32px;
+    }
+  }
+}

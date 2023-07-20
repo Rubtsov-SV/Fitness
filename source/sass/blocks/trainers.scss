@@ -1,0 +1,183 @@
+.trainers {
+
+  padding-bottom: 70px;
+
+  h2 {
+    font-family: $ff-alumni;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+}
+
+.trainers__wrapper {
+  display: flex;
+  position: relative;
+  max-width: 246px;
+}
+
+.trainers__item {
+  position: relative;
+
+  width: 226px;
+  height: 274px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 23px;
+    transform: translate(-50%);
+    z-index: -1;
+
+    margin: 0;
+
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: $color-default-white;
+    white-space: nowrap;
+  }
+
+  &:hover,
+  &:focus {
+    .trainers__focus {
+      opacity: 1;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+}
+
+.trainers__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  img {
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.trainers__focus {
+  height: 100%;
+  padding: 41px 23px 10px;
+  text-align: center;
+
+  color: $color-default-white;
+  background-color: rgba($text-color, 0.9);
+
+  opacity: 0;
+  transition: all 0.2s;
+
+  p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+}
+
+.trainers__focus-name {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.trainers__focus-list {
+
+  list-style: none;
+
+  margin-top: 38px;
+  padding-left: 11px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+
+  text-align: left;
+}
+
+.trainers__focus-item {
+  position: relative;
+
+  margin-bottom: 13px;
+  padding-left: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 7px;
+
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .trainers {
+    padding-bottom: 100px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+
+  .trainers__wrapper {
+    flex-direction: row;
+    max-width: 566px;
+    margin: 0 auto;
+  }
+
+  .trainers__item {
+    width: 268px;
+    height: 294px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .trainers {
+    padding-bottom: 70px;
+    margin-top: 106px;
+
+    h2 {
+      margin-bottom: 42px;
+      text-align: left;
+    }
+  }
+
+  .trainers__wrapper {
+    max-width: 268px;
+  }
+
+  .trainers__item {
+    width: 260px;
+    min-height: 294px;
+  }
+
+  .trainers__focus {
+    height: 100%;
+    padding: 41px 23px 10px;
+  }
+}
