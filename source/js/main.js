@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import { compile } from 'sass';
 
 // ---------------------------------
 
@@ -100,7 +101,7 @@ if (offerList) {
 
 // Слайдер тренера
 
-const swiper = new Swiper('.swiper', {
+const mySwiper = new Swiper('.swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   loop: true,
