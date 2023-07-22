@@ -1,0 +1,261 @@
+.discount {
+  padding-top: 63px;
+  padding-bottom: 70px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 42px;
+    text-align: center;
+    font-family: $ff-alumni;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.discount__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.discount__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  color: $color-default-white;
+  background-color: $games-color;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+  }
+}
+
+.discount__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 1005;
+  padding: 45px;
+  padding-top: 42px;
+}
+
+.discount__term {
+  display: block;
+
+  font-size: 28px;
+  line-height: 43px;
+  font-weight: 700;
+}
+
+.discount__price {
+  display: block;
+
+  font-size: 70px;
+  line-height: 109px;
+  font-weight: 700;
+}
+
+.discount__link {
+  margin-top: auto;
+  padding-top: 20px;
+  padding-bottom: 1px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-default-white;
+
+  color: $color-default-white;
+}
+
+.discount__img {
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.discount__list {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.discount__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 211px;
+  margin-bottom: 40px;
+  padding: 28px;
+  padding-top: 24px;
+
+  color: #1C3374;
+  border: 7px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(#d10a42 0%, #00359f 100%);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 26px;
+    line-height: 50px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.discount__link--item {
+  margin-top: auto;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #1c3374;
+  border-color: #1c3374;
+}
+
+@media (min-width: $tablet) {
+  .discount {
+    padding-top: 91px;
+    padding-bottom: 101px;
+
+    h2 {
+      margin-bottom: 42px;
+    }
+  }
+
+  .discount__wrapper {
+    display: flex;
+  }
+
+  .discount__info {
+    flex-direction: row;
+    width: 100%;
+    height: 462px;
+    margin-bottom: 30px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  .discount__info-wrapper {
+    width: 100%;
+    align-items: start;
+    text-align: left;
+    padding: 42px 35px 45px 45px;
+  }
+
+  .discount__img {
+    img {
+      min-width: 399px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .discount__list {
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .discount__item {
+    width: 100%;
+    align-items: start;
+    text-align: left;
+    min-height: 211px;
+    margin-bottom: 0;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      font-size: 26px;
+      line-height: 26px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .discount {
+    padding-top: 135px;
+    padding-bottom: 120px;
+
+    h2 {
+      margin-bottom: 34px;
+    }
+  }
+
+  .discount__wrapper {
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .discount__info {
+    p {
+      margin-bottom: 11px;
+    }
+  }
+
+  .discount__img {
+    img {
+      min-width: 280px;
+    }
+  }
+
+  .discount__list {
+    flex-direction: column;
+    min-width: 560px;
+    padding-top: 0;
+  }
+
+  .discount__item {
+    width: 100%;
+    padding: 35px 28px 39px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
