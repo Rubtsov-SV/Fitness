@@ -122,3 +122,75 @@ const mySwiper = new Swiper('.swiper', {
     },
   },
 });
+
+
+// Табы вопросов
+
+const questionsButton = document.querySelectorAll('.questions__categories-button');
+const answerList = document.querySelectorAll('.answer__list');
+
+if (answerList) {
+  questionsButton.forEach((button) => {
+    button.classList.remove('questions__categories-button--active');
+  });
+  answerList.forEach((list) => {
+    list.classList.remove('answer__list--active');
+  });
+
+  questionsButton[0].classList.add('questions__categories-button--active');
+  answerList[0].classList.add('answer__list--active');
+
+  const changeList = (index) => {
+    questionsButton.forEach((button) => {
+      button.classList.remove('questions__categories-button--active');
+    });
+    answerList.forEach((list)=> {
+      list.classList.remove('answer__list--active');
+    });
+
+    questionsButton[index].classList.add('questions__categories-button--active');
+    answerList[index].classList.add('answer__list--active');
+  };
+
+  questionsButton.forEach((element, index) => {
+    element.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      changeList(index);
+    });
+  });
+}
+
+
+// Аккордеон вопросы
+
+const answerText = document.querySelectorAll('.answer__item-reply');
+const answerIcon = document.querySelectorAll('.answer__item-icon');
+const answerButton = document.querySelectorAll('.answer__item');
+
+if (answerButton) {
+  answerText.forEach((text) => {
+    text.classList.remove('answer__item-reply--active');
+  });
+  answerIcon.forEach((icon) => {
+    if (icon.classList.contains('answer__item-icon--open')) {
+      icon.classList.remove('answer__item-icon--close');
+    } else {
+      icon.classList.add('answer__item-icon--open');
+      icon.classList.remove('answer__item-icon--close');
+    }
+  });
+
+  const accordion = (index) => {
+
+    answerText[index].classList.toggle('answer__item-reply--active');
+    answerIcon[index].classList.toggle('answer__item-icon--open');
+    answerIcon[index].classList.toggle('answer__item-icon--close');
+  };
+
+  answerButton.forEach((element, index) => {
+    element.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      accordion(index);
+    });
+  });
+}

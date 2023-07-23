@@ -1,0 +1,135 @@
+.questions__answerm{
+  display: flex;
+}
+
+.answer__list {
+  display: none;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+.answer__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 40px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #1c337433;
+  }
+
+  &:first-child {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: calc(100% + 22px);
+      width: 100%;
+      height: 1px;
+      background-color: #1c337433;
+    }
+  }
+}
+
+.answer__item-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  gap: 20px;
+}
+
+.answer__item-icon {
+
+  &--close {
+    background: url(../img/svg/close.svg) no-repeat;
+    min-width: 32px;
+    height: 32px;
+  }
+
+  &--open {
+    background: url(../img/svg/open.svg) no-repeat;
+    min-width: 32px;
+    height: 32px;
+
+    &:hover,
+    :focus {
+      background: url(../img/svg/open-focus.svg) no-repeat;
+    }
+  }
+}
+
+.answer__item-questions {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+
+  color: #102654;
+}
+
+.answer__item-reply {
+  display: none;
+
+  &--active {
+    display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+
+  .answer__item-block {
+    gap: 76px;
+  }
+
+  .answer__item-reply {
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 118px;
+  }
+
+  .answer__item {
+
+    padding-bottom: 0;
+
+    &:first-child {
+      &::before {
+        bottom: calc(100% + 42px);
+
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .answer__list {
+    padding-top: 32px;
+  }
+
+  .answer__item {
+    padding-bottom: 50px;
+
+    &:first-child {
+      &::before {
+        bottom: calc(100% + 30px);
+
+      }
+    }
+  }
+}
