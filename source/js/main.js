@@ -194,3 +194,12 @@ if (answerButton) {
     });
   });
 }
+
+// Слайдер отзывы
+
+const swiperFeedback = new Swiper('.feedback__slider', {
+  navigation: {
+    nextEl: '.feedback__button-next',
+    prevEl: '.feedback__button-prev',
+  },
+});

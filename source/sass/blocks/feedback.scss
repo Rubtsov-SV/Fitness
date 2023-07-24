@@ -1,0 +1,169 @@
+.feedback {
+  padding-top: 63px;
+  padding-bottom: 70px;
+  text-align: center;
+
+  h2 {
+    font-family: $ff-alumni;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0;
+    padding-bottom: 42px;
+  }
+}
+
+.feedback__list {
+  padding: 0;
+  margin: 0;
+  min-width: 290px;
+  height: 100%;
+}
+
+.feedback__item {
+  width: 226px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 25px;
+  background-color: #1C3374;
+
+  h3 {
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-default-white;
+    margin: 0;
+    text-align: left;
+    width: 63px;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+    margin: 0;
+    width: 176px;
+  }
+
+  img {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.feedback__item-wrapper {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.feedback__button-prev,
+.feedback__button-next {
+  position: absolute;
+  bottom: 580px;
+
+  width: 51px;
+  height: 19px;
+  padding: 0;
+
+  font: inherit;
+
+  color: $price-shadow-color;
+  background: center no-repeat;
+
+  border: none;
+  opacity: 1;
+  z-index: 2;
+
+  cursor: pointer;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.feedback__button-prev {
+  left: 0;
+  background-image: url("../img/svg/icon-prev.svg");
+}
+
+.feedback__button-next {
+  right: 0;
+  background-image: url("../img/svg/icon-next.svg");
+}
+
+@media (min-width: $tablet) {
+  .feedback {
+    padding-top: 91px;
+    padding-bottom: 100px;
+    text-align: center;
+
+    h2 {
+      font-family: $ff-alumni;
+      font-size: 42px;
+      line-height: 50px;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+  }
+
+  .feedback__list {
+    min-width: 566px;
+  }
+
+  .feedback__item {
+    width: 566px;
+    padding: 62px 65px;
+    position: relative;
+
+    h3 {
+      font-size: 20px;
+      line-height: 15px;
+      min-width: 200px;
+      margin-left: 108px;
+    }
+
+    p {
+      margin-left: 108px;
+      text-align: left;
+      width: 328px;
+    }
+
+    .feedback__img {
+      position: absolute;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .feedback__button-prev,
+  .feedback__button-next {
+
+    bottom: 350px;
+  }
+
+  .feedback__button-prev {
+    left: 50px
+  }
+
+  .feedback__button-next {
+    right: 50px
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .feedback__button-prev {
+    left: 340px
+  }
+
+  .feedback__button-next {
+    right: 340px
+  }
+}
