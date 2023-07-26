@@ -28,21 +28,22 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/barbell-disc@2x.png");
-      background-size: 289px auto;
+      background-size: 344px auto;
     }
   }
 }
 
 @media (min-width: $desktop) {
   .page-wrapper--subscription::after {
-    bottom: -122px;
-    right: -49px;
+    bottom: -95px;
+    left: 1075px;
 
     width: 321px;
     height: 384px;
+    background-size: 392px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-size: 321px 385px;
+      background-size: 392px auto;
     }
   }
 }

@@ -117,7 +117,7 @@
   }
 
   .games__crossfit {
-    margin: 0 0 28px;
+    margin: 0 0 31px;
   }
 }
 
@@ -139,16 +139,27 @@
   .games__block{
 
     margin-top: 0;
-    margin-bottom: 23px;
+    margin-bottom: 9px;
+    margin-left: 18px;
 
     h2 {
       font-size: 82px;
       line-height: 78px;
+      letter-spacing: 0.06rem;
       margin: 0;
-      margin-right: 50px;
+      margin-right: 5px;
 
       width: 201px;
     }
+  }
+
+  .games__list {
+    padding-left: 25px;
+  }
+
+
+  .games__item:first-child{
+    margin-bottom: 9px;
   }
 
   .games__item-title {
@@ -187,7 +198,8 @@
   .games__crossfit {
     font-size: 18px;
     line-height: 27px;
-    margin-left: -60px;
-    margin-bottom: 55px;
+    letter-spacing: 0.01rem;
+    margin-left: -47px;
+    margin-bottom: 46px;
   }
 }

@@ -71,7 +71,7 @@
 @media (min-width: $tablet) {
   .banner {
     width: 100%;
-    padding-bottom: 82px;
+    padding-bottom: 83px;
   }
 
   .banner__text {
@@ -121,7 +121,7 @@
     display: flex;
     justify-content: center;
 
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 
   .banner__text {
@@ -133,7 +133,7 @@
 
     width: 396px;
     margin-right: 64px;
-    padding-top: 115px;
+    padding-top: 93px;
 
     font-family: $ff-alumni;
     text-align: right;
@@ -141,21 +141,24 @@
     color: $color-default-white;
 
     span {
-      font-weight: normal;
-      font-size: 49px;
-      line-height: 49px;
-      letter-spacing: 0.03em;
+      font-weight: 400;
+      font-size: 41px;
+      line-height: 57px;
+      letter-spacing: 0.06em;
+      margin-right: 51px;
+      text-transform: uppercase;
     }
 
     h1 {
-      margin: 13px 0 51px;
-
-      font-weight: bold;
+      margin: 12px 0 46px;
+      font-family: $ff-alumni;
+      font-weight: 600;
       max-width: 298px;
-      font-size: 109px;
-      line-height: 109px;
+      font-size: 100px;
+      line-height: 110px;
       text-align: right;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
 
       text-shadow:
         -1px -1px 0 $color-default-white,
@@ -167,7 +170,7 @@
 
   .banner__services-list {
     position: absolute;
-    top: 299px;
+    top: 269px;
     right: 263px;
 
     font-family: $ff-roboto;
@@ -184,7 +187,8 @@
   }
 
   .banner__img {
-    margin-top: -6px;
+    margin-top: -23px;
+    margin-right: 200px;
     width: 500px;
     height: 556px;
   }

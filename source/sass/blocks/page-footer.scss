@@ -64,8 +64,8 @@
 
 @media (min-width: $tablet) {
   .page-footer {
-    padding-top: 47px;
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 21px;
   }
 
   .page-footer__wrapper {
@@ -81,6 +81,7 @@
   .page-footer__nav-item {
     font-size: 14px;
     line-height: 16px;
+    margin-top: 4px;
 
     &:first-child {
       margin-right: 32px;

@@ -163,6 +163,11 @@
     padding-left: 0;
     padding-right: 0;
     gap: 5px;
+    justify-content: stretch;
+  }
+
+  .advantages__block--right {
+    margin-left: 33px;
   }
 
   .advantages__block--right.advantages__block--top {
@@ -263,6 +268,7 @@
 
     h2 {
       font-size: 54px;
+      letter-spacing: 0.1rem;
       line-height: 64px;
       margin-bottom: 61px;
     }

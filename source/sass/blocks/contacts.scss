@@ -140,7 +140,7 @@
 
 @media (min-width: $tablet) {
   .contacts__feedback {
-    padding: 0 133px 70px;
+    padding: 0 133px 65px;
 
     h2 {
       font-family: $ff-alumni;
@@ -175,21 +175,29 @@
   }
 
   .contacts__info {
-    padding: 70px 133px 0;
+    padding: 62px 133px 0;
+
+    h2 {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 0.06rem;
+      padding-bottom: 35px;
+    }
   }
 
   .contacts__info-wrapper {
     display: flex;
-    justify-content: space-between;
+    gap: 96px;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      left: 285px;
-      bottom: 40px;
+      left: 266px;
+      bottom: 31px;
       width: 1px;
-      height: 160px;
+      height: 127px;
       background-color: #74819C;
     }
   }

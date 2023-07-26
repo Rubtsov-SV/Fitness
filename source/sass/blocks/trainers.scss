@@ -182,7 +182,7 @@
     padding-bottom: 100px;
 
     h2 {
-      margin-bottom: 28px;
+      margin-bottom: 33px;
       font-size: 42px;
       line-height: 50px;
       letter-spacing: 0.06rem;
@@ -216,11 +216,14 @@
 
 @media (min-width: $desktop) {
   .trainers {
-    padding-bottom: 70px;
-    margin-top: 106px;
+    padding-bottom: 100px;
+    padding-top: 108px;
 
     h2 {
-      margin-bottom: 42px;
+      font-size: 54px;
+      line-height: 64px;
+      letter-spacing: 0.1rem;
+      margin-bottom: 49px;
       text-align: left;
     }
   }
@@ -251,10 +254,10 @@
   }
 
   .trainers__button-prev {
-    left: -40px;
+    left: -56px;
   }
 
   .trainers__button-next {
-    right: -40px;
+    right: -56px;
   }
 }
