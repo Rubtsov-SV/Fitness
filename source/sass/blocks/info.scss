@@ -7,12 +7,12 @@
 
   display: flex;
   flex-direction: column;
-  padding: 70px 0;
+  padding: 37px 0;
 
 }
 
 .info__text {
-  padding: 0 15px 25px;
+  padding: 0 15px 17px;
   text-align: left;
 
   h2 {
@@ -20,6 +20,7 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 38px;
+    letter-spacing: 0.06rem;
     margin-bottom: 4px;
   }
 
@@ -94,16 +95,11 @@
   display: none;
 }
 
-#video {
-  width: 320px;
-  height: 167px;
-}
-
 .info__video-button {
   position: absolute;
 
-  top: 50%;
-  left: 50%;
+  top: 57%;
+  left: 54%;
   transform: translate(-50%, -50%);
   z-index: 5;
 
@@ -111,6 +107,7 @@
   height: 100px;
 
   background: url("../img/player-button.png") no-repeat 0 0;
+  background-size: 73px;
   border: none;
 
   transition: transform 1s;
@@ -128,26 +125,37 @@
 
 @media (min-width: $tablet) {
   .info {
+    max-width: 678px;
     flex-direction: column;
     align-items: center;
 
-    padding: 101px 45px 183px;
+    padding: 100px 0 145px;
   }
 
   .info__text {
     width: 100%;
 
     margin-right: 0;
-    padding: 0 20px 35px;
+    padding: 0 20px 43px;
     text-align: center;
 
     h2 {
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 0.06rem;
       margin-top: 0;
-      margin-bottom: 6px;
+
+      margin-bottom: 2px;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 502px;
+      padding-right: 0;
     }
 
     b {
-      margin-bottom: 35px;
+      margin-bottom: 33px;
     }
   }
 
@@ -162,7 +170,7 @@
 
   .info__video {
     position: absolute;
-    bottom: 140px;
+    bottom: 103px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -175,6 +183,7 @@
     }
   }
 
+
   #video {
     width: 266px;
     height: 167px;
@@ -183,6 +192,9 @@
   .info__video-button {
     width: 73px;
     height: 73px;
+
+    top: 51%;
+    left: 50%;
 
     background-size: 73px 73px;
   }

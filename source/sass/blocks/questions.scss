@@ -1,5 +1,5 @@
 .questions {
-  padding-top: 70px;
+  padding-top: 46px;
   padding-bottom: 90px;
 
   background-color: $bg-color;
@@ -13,7 +13,8 @@
     font-family: $ff-alumni;
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+    letter-spacing: 0.06rem;
   }
 }
 
@@ -70,8 +71,15 @@
 @media (min-width: $tablet) {
 
   .questions {
-    padding-top: 100px;
+    padding-top: 65px;
     padding-bottom: 125px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 0.07rem;
+      margin-bottom: 40px;
+    }
   }
 
   .questions__categories-list {

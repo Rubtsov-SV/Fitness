@@ -1,6 +1,6 @@
 .feedback {
-  padding-top: 63px;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 67px;
   text-align: center;
 
   h2 {
@@ -27,7 +27,7 @@
   width: 226px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 25px;
+  padding: 35px 25px;
   background-color: #1C3374;
 
   h3 {
@@ -37,6 +37,7 @@
     margin: 0;
     text-align: left;
     width: 63px;
+    margin-top: 14px;
   }
 
   p{
@@ -48,6 +49,8 @@
   }
 
   img {
+    margin-top: 2px;
+    margin-left: 15px;
     width: 68px;
     height: 68px;
   }
@@ -90,18 +93,18 @@
 }
 
 .feedback__button-prev {
-  left: -10px;
+  left: -18px;
   background-image: url("../img/svg/icon-prev.svg");
 }
 
 .feedback__button-next {
-  right: -10px;
+  right: -18px;
   background-image: url("../img/svg/icon-next.svg");
 }
 
 @media (min-width: $tablet) {
   .feedback {
-    padding-top: 91px;
+    padding-top: 27px;
     padding-bottom: 100px;
     text-align: center;
 
@@ -109,6 +112,7 @@
       font-family: $ff-alumni;
       font-size: 42px;
       line-height: 50px;
+      letter-spacing: 0.06rem;
       margin: 0;
       padding-bottom: 40px;
     }
@@ -120,7 +124,7 @@
 
   .feedback__item {
     width: 566px;
-    padding: 62px 65px;
+    padding: 55px 65px;
     position: relative;
 
     h3 {
@@ -128,6 +132,7 @@
       line-height: 15px;
       min-width: 200px;
       margin-left: 108px;
+      margin-top: 11px;
     }
 
     p {
@@ -142,14 +147,21 @@
       img {
         width: 80px;
         height: 80px;
+        margin-top: 10px;
+        margin-left: 0;
       }
     }
   }
 
+  .feedback__item-wrapper {
+    padding-bottom: 18px;
+}
+
   .feedback__button-prev,
   .feedback__button-next {
 
-    bottom: 120px;
+    bottom: 104px;
+    height: 32px;
   }
 
 }

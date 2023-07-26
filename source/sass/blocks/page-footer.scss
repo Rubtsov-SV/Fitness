@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 50px;
+  padding-top: 37px;
   padding-bottom: 44px;
 
   background-color: $footer-color;
@@ -21,17 +21,17 @@
   column-gap: 30px;
   padding: 0;
 
-  margin-bottom: 13px;
+  margin-bottom: -2px;
   list-style: none;
 }
 
 .page-footer__nav-item {
   margin-right: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   &:first-child {
     margin-right: 0;
-    margin-bottom: 37px;
+    margin-bottom: 20px;
   }
 }
 
@@ -41,6 +41,10 @@
   line-height: 18px;
 
   color: $color-default-white;
+
+  img {
+    width: 68px;
+  }
 }
 
 .page-footer__networks {

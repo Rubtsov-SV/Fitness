@@ -115,16 +115,20 @@
         </picture>
 
         <div class="info__video">
-          <div class="info__video-player" id="video-player">
+          <div class="info__video-player">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div class="info__video-cover" id="video-img">
+          <div class="info__video-cover">
             <picture>
               <!-- <source srcset="img/gym-video.webp 1x, img/gym-video@2x.webp 2x" type="image/webp"> -->
-              <img src="img/video-gym.jpg" srcset="img/video-gym@2x.jpg 2x" width="364" height="228"
+              <source media="(min-width:1200px)" srcset="img\video-gym.jp 1x, img\video-gym.jp@2x.jpg 2x" width="364"
+                height="288">
+              <source media="(min-width:768px)" src="img/video-gym-tablet.jpg" srcset="img/video-gym-tablet@2.jpg 2x"
+                width="266" height="167" alt="Герой спортзала">
+              <img src="img/video-gym-mobil.jpg" srcset="img/video-gym-mobil@2x.jpg 2x" width="320" height="167"
                 alt="Видеоэкскурсия по нашему тренажерному залу">
             </picture>
             <button class="info__video-button" id="video-button" type="button" aria-label="Посмотреть видео"></button>
@@ -303,7 +307,7 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.jpg 2x" width="260" height="292"
+                      <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Анна Павлова">
                     </picture>
                   </div>
@@ -329,7 +333,7 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-alexey.webp 1x, img/trainer-alexey@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-alex.jpg" srcset="img/trainer-alex@2x.jpg 2x" width="260" height="292"
+                      <img src="img/trainer-alex.jpg" srcset="img/trainer-alex@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Алексей Лавров">
                     </picture>
                   </div>
@@ -355,8 +359,8 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-alexander.webp 1x, img/trainer-alexander@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-alexander.jpg" srcset="img/trainer-alexander@2x.jpg 2x" width="260"
-                        height="292" alt="Тренер Александр Пашков">
+                      <img src="img/trainer-alexander.jpg" srcset="img/trainer-alexander@2x.jpg 2x" width="268"
+                        height="294" alt="Тренер Александр Пашков">
                     </picture>
                   </div>
                   <h3>Александр Пашков</h3>
@@ -381,7 +385,7 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-maria.webp 1x, img/trainer-maria@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-maria.jpg" srcset="img/trainer-maria@2x.jpg 2x" width="260" height="292"
+                      <img src="img/trainer-maria.jpg" srcset="img/trainer-maria@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Мария Кетова">
                     </picture>
                   </div>
@@ -407,7 +411,7 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-maria.webp 1x, img/trainer-maria@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-maria.jpg" srcset="img/trainer-maria@2x.jpg 2x" width="260" height="292"
+                      <img src="img/trainer-maria.jpg" srcset="img/trainer-maria@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Мария Кетова">
                     </picture>
                   </div>
@@ -433,8 +437,8 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-alexander.webp 1x, img/trainer-alexander@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-alexander.jpg" srcset="img/trainer-alexander@2x.jpg 2x" width="260"
-                        height="292" alt="Тренер Александр Пашков">
+                      <img src="img/trainer-alexander.jpg" srcset="img/trainer-alexander@2x.jpg 2x" width="268"
+                        height="294" alt="Тренер Александр Пашков">
                     </picture>
                   </div>
                   <h3>Александр Пашков</h3>
@@ -459,7 +463,7 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-alexey.webp 1x, img/trainer-alexey@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-alex.jpg" srcset="img/trainer-alex@2x.jpg 2x" width="260" height="292"
+                      <img src="img/trainer-alex.jpg" srcset="img/trainer-alex@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Алексей Лавров">
                     </picture>
                   </div>
@@ -485,7 +489,7 @@
                   <div class="trainers__img">
                     <picture>
                       <!-- <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp"> -->
-                      <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.jpg 2x" width="260" height="292"
+                      <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Анна Павлова">
                     </picture>
                   </div>
@@ -523,7 +527,8 @@
               </p>
               <div class="advantages__info">
                 <h3>Площадь</h3>
-                <p>Занимайтесь без очередей и толпучки</p>
+                <p>Занимайтесь без очередей
+                  и толкучки</p>
               </div>
             </div>
             <div class="advantages__block advantages__block--right advantages__block--top">

@@ -1,6 +1,5 @@
 .contacts {
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 39px;
 }
 
 .valid {
@@ -22,8 +21,9 @@
     font-size: 32px;
     line-height: 38px;
     color: $color-default-white;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    letter-spacing: 0.06rem;
+    padding-top: 64px;
+    padding-bottom: 29px;
     margin: 0;
   }
 }
@@ -34,7 +34,7 @@
     border-bottom: 1px solid #74819C;
     width: 100%;
     padding: 10px 0;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 
     font-family: $ff-roboto;
     font-size: 14px;
@@ -73,17 +73,21 @@
 
 .contacts__feedback-button {
   width: 100%;
+  letter-spacing: 0.1rem;
+  padding-top: 25px;
+  padding-bottom: 21px;
 }
 
 .contacts__info {
-  padding-top: 70px;
+  padding-top: 63px;
 
   h2 {
     font-family: $ff-alumni;
     font-size: 32px;
     line-height: 38px;
+    letter-spacing: 0.06rem;
     color: #102654;
-    padding-bottom: 50px;
+    padding-bottom: 38px;
     margin: 0;
   }
 }
@@ -94,7 +98,7 @@
   dt {
     font-weight: 700;
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 9px;
   }
 
   dl {
@@ -104,7 +108,7 @@
   dd {
     font-weight: 400;
     font-size: 18px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 
     margin: 0;
   }
@@ -142,8 +146,9 @@
       font-family: $ff-alumni;
       font-size: 42px;
       line-height: 50px;
-      padding-top: 70px;
-      padding-bottom: 50px;
+      letter-spacing: 0.1rem;
+      padding-top: 63px;
+      padding-bottom: 28px;
       margin: 0;
     }
   }
@@ -156,14 +161,17 @@
       border-bottom: 1px solid #74819C;
       width: 206px;
       padding: 10px 0;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
   }
+  .contacts__feedback-button {
+    width: calc(100% - 27px);
+}
 
   .contacts__feedback-block {
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
   }
 
   .contacts__info {

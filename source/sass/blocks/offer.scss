@@ -7,9 +7,9 @@
 .offer__list {
   display: none;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  padding: 0 15px;
+  padding: 0;
 
   overflow: hidden;
 }
@@ -26,8 +26,8 @@
   align-items: center;
 
   width: 100%;
-  margin-bottom: 35px;
-  padding: 49px 60px 60px;
+  margin-bottom: 34px;
+  padding: 49px 60px 44px;
 
   background-color: $color-default-white;
 
@@ -47,7 +47,7 @@
 
   h3 {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 
     font-weight: 700;
     font-size: 22px;
@@ -60,7 +60,7 @@
 }
 
 .offer__term {
-  margin-bottom: 66px;
+  margin-bottom: 54px;
 
   font-weight: normal;
   font-size: 16px;
@@ -75,7 +75,7 @@
 
   display: flex;
   align-items: baseline;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 
   font-weight: bold;
   font-size: 48px;
@@ -138,7 +138,8 @@
 
   .offer__item {
     width: 66%;
-    padding-top: 50px;
+    padding-top: 56px;
+    padding-bottom: 67px;
 
     h3 {
       font-size: 26px;
@@ -146,9 +147,14 @@
     }
   }
 
+  .offer__term {
+    margin-bottom: 66px;
+  }
+
   .offer__price {
     font-size: 60px;
     line-height: 90px;
+    margin-bottom: 34px;
 
     &::before {
       font-size: 100px;
