@@ -133,7 +133,7 @@
       </section>
 
       <div class="page-wrapper page-wrapper--subscription">
-        <section class="subscription">
+        <section class="subscription" id="subscription">
           <div class="subscription__wrapper container">
             <h2>Абонементы</h2>
             <div class="subscription__term">
@@ -841,6 +841,61 @@
           </div>
           <button class="feedback__button-prev" type="button"></button>
           <button class="feedback__button-next" type="button"></button>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__feedback">
+            <h2>Бесплатное занятие </h2>
+            <form class="contacts__feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="contacts__feedback-block">
+                <div class="contacts__feedback-box">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input class="contacts__feedback-name" data-name="name" type="text" name="name" placeholder="Имя"
+                    required>
+                  <p class="contacts__erorr-name">Введно неверное имя</p>
+                </div>
+                <div class="contacts__feedback-box">
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input class="contacts__feedback-phone" data-rules="tel" type="tel" name="tel" placeholder="Телефон"
+                    required>
+                  <p class="contacts__erorr-phone">Введен не верный телефон</p>
+                </div>
+              </div>
+              <button class="contacts__feedback-button button" type="submit">Отправить</button>
+            </form>
+          </div>
+
+          <div class="contacts__info container">
+            <h2>Контакты</h2>
+            <div class="contacts__info-wrapper">
+              <div class="contacts__info-column">
+                <dl>
+                  <dt>Адрес:</dt>
+                  <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+                </dl>
+                <dl>
+                  <dt>График работы:</dt>
+                  <dd>Пн-Вс: с 8:00 до 22:00</dd>
+                </dl>
+              </div>
+              <div class="contacts__info-column">
+                <dl>
+                  <dt>Телефон:</dt>
+                  <dd>
+                    <a href="tel:88005555555" aria-label="Позвоните нам">8-800-555-55-55</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>Email:</dt>
+                  <dd>
+                    <a href="mailto:omsk@supergym.ru" aria-label="Наша электронная почта">omsk@supergym.ru</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

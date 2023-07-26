@@ -12,6 +12,10 @@
   }
 }
 
+.feedback__wrapper {
+  position: relative;
+}
+
 .feedback__list {
   padding: 0;
   margin: 0;
@@ -58,7 +62,7 @@
 .feedback__button-prev,
 .feedback__button-next {
   position: absolute;
-  bottom: 580px;
+  bottom: 160px;
 
   width: 51px;
   height: 19px;
@@ -86,12 +90,12 @@
 }
 
 .feedback__button-prev {
-  left: 0;
+  left: -10px;
   background-image: url("../img/svg/icon-prev.svg");
 }
 
 .feedback__button-next {
-  right: 0;
+  right: -10px;
   background-image: url("../img/svg/icon-next.svg");
 }
 
@@ -145,25 +149,18 @@
   .feedback__button-prev,
   .feedback__button-next {
 
-    bottom: 350px;
+    bottom: 120px;
   }
 
-  .feedback__button-prev {
-    left: 50px
-  }
-
-  .feedback__button-next {
-    right: 50px
-  }
 }
 
 @media (min-width: $desktop) {
 
   .feedback__button-prev {
-    left: 340px
+    left: 200px
   }
 
   .feedback__button-next {
-    right: 340px
+    right: 200px
   }
 }

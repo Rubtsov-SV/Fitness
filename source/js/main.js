@@ -50,6 +50,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
+// Скрол
+const bannerScroll = document.querySelector('.banner-scroll');
+const subscription = document.querySelector('#subscription');
+
+if (bannerScroll) {
+  bannerScroll.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    subscription.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}
+
 // Видео тренажерный зал
 
 const videoButton = document.querySelector('#video-button');
@@ -198,8 +212,72 @@ if (answerButton) {
 // Слайдер отзывы
 
 const swiperFeedback = new Swiper('.feedback__slider', {
+  loop: true,
   navigation: {
     nextEl: '.feedback__button-next',
     prevEl: '.feedback__button-prev',
   },
 });
+
+// Проверка на валидность формы
+
+let input = document.querySelector('.contacts__feedback-phone');
+let erorrPhone = document.querySelector('.contacts__erorr-phone');
+let form = document.querySelector('form');
+
+const eventPhone = () => {
+
+  let rules = input.dataset.rules;
+  let value = input.value;
+  let checkPhone;
+  switch (rules) {
+    case 'tel':
+      checkPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7}$/.test(value);
+      break;
+  }
+  if (!checkPhone) {
+    erorrPhone.style.display = 'block';
+    input.style.borderBottomColor = '#FF121F';
+    return false;
+  } else {
+    erorrPhone.style.display = 'none';
+    input.style.borderBottomColor = '#74819C';
+    return true;
+  }
+};
+let inputName = document.querySelector('.contacts__feedback-name');
+let erorrName = document.querySelector('.contacts__erorr-name');
+
+const eventName = () => {
+
+  let name = inputName.dataset.name;
+  let value = inputName.value;
+  let checkName;
+  switch (name) {
+    case 'name':
+      checkName = /^[a-zA-Z\-]+$/.test(value);
+      break;
+  }
+  if (!checkName) {
+    erorrName.style.display = 'block';
+    inputName.style.borderBottomColor = '#FF121F';
+    return false;
+  } else {
+    erorrName.style.display = 'none';
+    inputName.style.borderBottomColor = '#74819C';
+    return true;
+  }
+};
+
+form.addEventListener('submit', (event) => {
+  if (eventPhone() === false || eventName() === false) {
+    event.preventDefault();
+    return false;
+  } else {
+    event.preventDefault();
+    form.submit();
+    form.reset();
+    return true;
+  }
+});
+
