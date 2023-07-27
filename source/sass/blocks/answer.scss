@@ -54,17 +54,15 @@
 .answer__item-icon {
   display: flex;
   margin: auto;
+  min-width: 32px;
+  height: 32px;
 
   &--close {
     background: url(../img/svg/close.svg) no-repeat;
-    min-width: 32px;
-    height: 32px;
   }
 
   &--open {
     background: url(../img/svg/open.svg) no-repeat;
-    min-width: 32px;
-    height: 32px;
 
     &:hover,
     :focus {
