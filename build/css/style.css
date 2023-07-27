@@ -4362,16 +4362,14 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  min-width: 32px;
+  height: 32px;
 }
 .answer__item-icon--close {
   background: url(../img/svg/close.svg) no-repeat;
-  min-width: 32px;
-  height: 32px;
 }
 .answer__item-icon--open {
   background: url(../img/svg/open.svg) no-repeat;
-  min-width: 32px;
-  height: 32px;
 }
 .answer__item-icon--open:hover,
 .answer__item-icon--open :focus {
