@@ -4431,6 +4431,10 @@ button,
     height: 42px;
     margin-top: -9px;
   }
+  .answer__item-icon--open:hover,
+.answer__item-icon--open :focus {
+    background: url(../img/svg/close-focus-tablet.svg) no-repeat;
+  }
   .answer__item {
     padding-bottom: 50px;
   }

@@ -135,6 +135,14 @@
      width: 42px;
      height: 42px;
      margin-top: -9px;
+
+
+     &--open {
+       &:hover,
+      :focus {
+        background: url(../img/svg/close-focus-tablet.svg) no-repeat;
+      }
+     }
 }
 
   .answer__item {
