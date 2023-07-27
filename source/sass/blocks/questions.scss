@@ -101,8 +101,8 @@
 @media (min-width: $desktop) {
 
   .questions {
-    padding-top: 120px;
-    padding-bottom: 151px;
+    padding-top: 78px;
+    padding-bottom: 90px;
   }
 
   .questions__wrapper {
@@ -126,5 +126,19 @@
   .questions__categories-button {
 
     min-width: 260px;
+    padding: 17px 0;
   }
+
+  .questions {
+
+    h2 {
+      font-size: 54px;
+      line-height: 64px;
+      letter-spacing: 0.1rem;
+      margin-bottom: 40px;
+    }
+  }
+  .questions__categories-list {
+    gap: 9px;
+}
 }

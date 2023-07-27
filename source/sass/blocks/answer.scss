@@ -154,3 +154,17 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .answer__list {
+    padding-top: 35px;
+  }
+
+  .answer__item:first-child::before {
+    bottom: calc(100% + 36px);
+  }
+
+  .answer__item-reply {
+    padding-right: 185px;
+}
+}

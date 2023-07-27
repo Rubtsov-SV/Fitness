@@ -21,6 +21,7 @@
   column-gap: 30px;
   padding: 0;
 
+  margin-top: 14px;
   margin-bottom: -2px;
   list-style: none;
 }
@@ -32,6 +33,10 @@
   &:first-child {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  &:nth-child(4) {
+    margin-top: 10px;
   }
 }
 
@@ -81,13 +86,17 @@
   .page-footer__nav-item {
     font-size: 14px;
     line-height: 16px;
-    margin-top: 4px;
+    margin-top: 10px;
 
     &:first-child {
       margin-right: 32px;
     }
     &:last-child {
       margin-right: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 0;
     }
   }
 
@@ -119,7 +128,7 @@
 
 @media (min-width: $desktop) {
   .page-footer {
-    padding-top: 42px;
+    padding-top: 9px;
     padding-bottom: 36px;
   }
 
@@ -133,19 +142,25 @@
     flex-wrap: wrap;
     width: 794px;
     align-items: center;
+    margin-top: 20px;
   }
 
   .page-footer__nav-item {
     margin-right: 10px;
     margin-bottom: 0;
+    margin-top: -8px;
 
     &:first-child {
       margin-right: 247px;
-      margin-bottom: 0;
+      margin-bottom: -8px;
     }
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 0;
     }
   }
 
@@ -164,9 +179,10 @@
 
   .page-footer__networks {
     max-width: 130px;
+    padding-top: 16px;
 
   li {
-    margin-right: 25px;
+    margin-right: 11px;
 
     &:last-child {
       margin-right: 0;
