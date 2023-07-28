@@ -34,7 +34,6 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
-
 }
 
 .page-footer__nav-link {
@@ -88,6 +87,7 @@
     &:first-child {
       margin-right: 32px;
     }
+
     &:last-child {
       margin-right: 0;
     }
@@ -151,7 +151,6 @@
     &:last-child {
       margin-right: 0;
     }
-
   }
 
   .page-footer__nav-item--logo {
@@ -162,7 +161,7 @@
   }
 
   .page-footer__nav-link {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
   }
@@ -171,12 +170,12 @@
     max-width: 130px;
     padding-top: 16px;
 
-  li {
-    margin-right: 11px;
+    li {
+      margin-right: 11px;
 
-    &:last-child {
-      margin-right: 0;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-  }
   }
 }

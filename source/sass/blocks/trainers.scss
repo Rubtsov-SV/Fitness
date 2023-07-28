@@ -87,7 +87,7 @@
 
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
   }
 }
 
@@ -105,7 +105,7 @@
 
   font-size: 14px;
   line-height: 21px;
-  font-weight: normal;
+  font-weight: 400;
 
   text-align: left;
 }
@@ -205,12 +205,11 @@
   }
 
   .trainers__button-prev,
-.trainers__button-next {
-  bottom: 129px;
-
-  width: 18px;
-  height: 32px;
-  padding: 0;
+  .trainers__button-next {
+    bottom: 129px;
+    width: 18px;
+    height: 32px;
+    padding: 0;
   }
 }
 
@@ -245,6 +244,7 @@
     height: 100%;
     padding: 41px 23px 10px;
   }
+
   .trainers__button-prev,
   .trainers__button-next {
     top: 45%;

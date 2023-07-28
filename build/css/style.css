@@ -2357,7 +2357,7 @@ button,
 .page-footer {
   padding-top: 37px;
   padding-bottom: 44px;
-  background-color: #030A1A;
+  background-color: #030a1a;
 }
 
 .page-footer__wrapper {
@@ -2816,7 +2816,7 @@ button,
 }
 .subscription {
   position: relative;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .subscription__wrapper {
@@ -3148,7 +3148,7 @@ button,
           align-items: center;
   height: 292px;
   margin-top: 70px;
-  background-color: #ED0233;
+  background-color: #ed0233;
   color: #ffffff;
 }
 
@@ -3567,7 +3567,7 @@ button,
 .advantages {
   padding-top: 37px;
   padding-bottom: 61px;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .advantages__wrapper {
@@ -3672,7 +3672,7 @@ button,
   margin-right: auto;
   margin-top: 8px;
   margin-bottom: 41px;
-  background-color: #1C3374;
+  background-color: #1c3374;
   color: #ffffff;
 }
 .advantages__center-wrapper b {
@@ -3697,7 +3697,7 @@ button,
 
 .advantages__block-wrapper span:first-child {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 58px;
   line-height: 61px;
   background: linear-gradient(120deg, rgb(237, 2, 51) 0%, rgb(6, 61, 180) 70%);
@@ -3705,7 +3705,6 @@ button,
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .advantages__block-wrapper span:last-child {
   display: block;
   margin-top: -3px;
@@ -3934,7 +3933,7 @@ button,
           flex-direction: column;
   width: 100%;
   color: #ffffff;
-  background-color: #ED0233;
+  background-color: #ed0233;
 }
 .discount__info p {
   margin-top: 0;
@@ -4188,7 +4187,7 @@ button,
 .questions {
   padding-top: 46px;
   padding-bottom: 90px;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .questions__wrapper {
@@ -4241,10 +4240,10 @@ button,
 .questions__categories-button--active {
   color: #ffffff;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: 1px solid #F8F9FC;
+  border: 1px solid #f8f9fc;
 }
 .questions__categories-button--active:hover, .questions__categories-button--active:focus {
-  border: 1px solid #F8F9FC;
+  border: 1px solid #f8f9fc;
 }
 
 @media (min-width: 768px) {

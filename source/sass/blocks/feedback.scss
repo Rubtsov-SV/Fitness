@@ -29,7 +29,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 35px 25px;
-  background-color: #1C3374;
+  background-color: #1c3374;
 
   h3 {
     font-size: 20px;
@@ -41,7 +41,7 @@
     margin-top: 14px;
   }
 
-  p{
+  p {
     font-size: 16px;
     line-height: 22px;
     color: $color-default-white;
@@ -156,7 +156,7 @@
 
   .feedback__item-wrapper {
     padding-bottom: 18px;
-}
+  }
 
   .feedback__button-prev,
   .feedback__button-next {
@@ -164,11 +164,9 @@
     bottom: 104px;
     height: 32px;
   }
-
 }
 
 @media (min-width: $desktop) {
-
   .feedback {
     padding-top: 117px;
     padding-bottom: 119px;
@@ -184,10 +182,10 @@
   }
 
   .feedback__button-prev {
-    left: 226px
+    left: 226px;
   }
 
   .feedback__button-next {
-    right: 226px
+    right: 226px;
   }
 }

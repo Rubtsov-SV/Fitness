@@ -280,4 +280,3 @@ form.addEventListener('submit', (event) => {
     return true;
   }
 });
-

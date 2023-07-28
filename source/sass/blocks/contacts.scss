@@ -2,14 +2,6 @@
   padding-bottom: 39px;
 }
 
-.valid {
-  border: 1px solid green;
-}
-
-.invalid {
-  border: 1px solid red;
-}
-
 .contacts__feedback {
   padding: 0 15px 65px;
   text-align: left;
@@ -30,44 +22,44 @@
 
 .contacts__feedback-name {
   background-color: inherit;
-    border: none;
-    border-bottom: 1px solid #74819C;
-    width: 100%;
-    padding: 7px 0;
-    margin-bottom: 26px;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  width: 100%;
+  padding: 7px 0;
+  margin-bottom: 26px;
 
+  font-family: $ff-roboto;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  &::placeholder {
     font-family: $ff-roboto;
     font-size: 14px;
     line-height: 16px;
     color: $color-default-white;
-
-    &::placeholder {
-      font-family: $ff-roboto;
-      font-size: 14px;
-      line-height: 16px;
-      color: $color-default-white;
-    }
+  }
 }
 
 .contacts__feedback-phone {
   background-color: inherit;
-    border: none;
-    border-bottom: 1px solid #74819C;
-    width: 100%;
-    padding: 10px 0;
-    margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 30px;
 
+  font-family: $ff-roboto;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  &::placeholder {
     font-family: $ff-roboto;
     font-size: 14px;
     line-height: 16px;
     color: $color-default-white;
-
-    &::placeholder {
-      font-family: $ff-roboto;
-      font-size: 14px;
-      line-height: 16px;
-      color: $color-default-white;
-    }
+  }
 }
 
 
@@ -121,13 +113,13 @@
 }
 
 .contacts__erorr-phone {
-    display: none;
-    position: absolute;
-    bottom: -31px;
-    font-weight: 400;
-    font-size: 14px;
-    padding-bottom: 22px;
-    color: #FF121F;
+  display: none;
+  position: absolute;
+  bottom: -31px;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 22px;
+  color: #ff121f;
 }
 
 .contacts__erorr-name {
@@ -137,7 +129,7 @@
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 22px;
-  color: #FF121F;
+  color: #ff121f;
 }
 
 @media (min-width: $tablet) {
@@ -156,20 +148,19 @@
   }
 
   .contacts__feedback-form {
-
     input {
       background-color: inherit;
       border: none;
-      border-bottom: 1px solid #74819C;
+      border-bottom: 1px solid #74819c;
       width: 206px;
       padding: 8px 0;
       margin-bottom: 25px;
     }
-
   }
+
   .contacts__feedback-button {
     width: calc(100% - 27px);
-}
+  }
 
   .contacts__feedback-block {
     display: flex;
@@ -200,13 +191,12 @@
       bottom: 31px;
       width: 1px;
       height: 127px;
-      background-color: #74819C;
+      background-color: #74819c;
     }
   }
 }
 
 @media (min-width: $desktop) {
-
   .contacts {
     padding-bottom: 0;
   }
@@ -233,7 +223,6 @@
     width: 190px;
     padding: 8px 0;
     margin-bottom: 25px;
-
   }
 
   .contacts__feedback-block {
@@ -282,5 +271,4 @@
       height: 104px;
     }
   }
-
 }

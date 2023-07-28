@@ -95,7 +95,7 @@
   margin-right: auto;
   margin-top: 8px;
   margin-bottom: 41px;
-  background-color: #1C3374;
+  background-color: #1c3374;
   color: $color-default-white;
 
   b {
@@ -122,11 +122,10 @@
 }
 
 .advantages__block-wrapper {
-
   span:first-child {
     display: block;
 
-    font-weight: bold;
+    font-weight: 700;
     font-size: 58px;
     line-height: 61px;
 
@@ -134,19 +133,16 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-}
-
-.advantages__block-wrapper {
 
   span:last-child {
     display: block;
     margin-top: -3px;
 
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
 
-    color: #2E35AC;
+    color: #2e35ac;
   }
 }
 
@@ -174,11 +170,12 @@
 
   .advantages__block--right {
     margin-left: 33px;
+    padding-left: 0;
   }
 
   .advantages__block--right.advantages__block--top {
     padding-bottom: 285px;
-}
+  }
 
   .advantages__block {
     flex-direction: row;
@@ -188,6 +185,7 @@
     p {
       text-align: left;
     }
+
     .advantages__block-wrapper {
       margin-top: 0;
     }
@@ -209,19 +207,11 @@
     padding-left: 0;
   }
 
-  .advantages__block--right {
-    padding-left: 0;
-  }
-
   .advantages__block-wrapper {
-
     span:first-child {
       font-size: 58px;
       line-height: 50px;
     }
-  }
-
-  .advantages__block-wrapper {
 
     span:last-child {
       margin-top: 0;
@@ -250,20 +240,16 @@
       margin-bottom: 13px;
     }
 
-  p {
+    p {
       font-size: 16px;
       line-height: 24px;
     }
 
     .advantages__center-number {
-      margin-bottom: 0;
+      margin-top: 37px;
+      margin-bottom: 5px;
     }
   }
-
-  .advantages__center-wrapper .advantages__center-number {
-    margin-top: 37px;
-    margin-bottom: 5px;
-}
 }
 
 @media (min-width: $desktop) {
@@ -299,13 +285,13 @@
       left: -18px;
       width: 340px;
       height: 2px;
-      background-color: #d10a4233;
+      background-color: rgba(209, 10, 66, 0.2);
     }
   }
 
   .advantages__block--right.advantages__block--bottom {
     padding-top: 0;
-}
+  }
 
 
   .advantages__block--left {
@@ -314,7 +300,7 @@
 
   .advantages__block--bottom {
     padding-top: 0;
-}
+  }
 
   .advantages__block {
     width: 328px;
@@ -330,7 +316,6 @@
   }
 
   .advantages__block-wrapper {
-
     span:first-child {
       font-size: 71px;
       line-height: 71px;

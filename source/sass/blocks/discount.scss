@@ -32,7 +32,7 @@
 
     font-size: 18px;
     line-height: 25px;
-    font-weight: normal;
+    font-weight: 400;
   }
 }
 
@@ -78,7 +78,6 @@
 }
 
 .discount__img {
-
   img {
     display: block;
     width: 100%;
@@ -104,7 +103,7 @@
   padding: 28px;
   padding-top: 24px;
 
-  color: #1C3374;
+  color: #1c3374;
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(#d10a42 0%, #00359f 100%);
@@ -124,7 +123,7 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
   }
@@ -212,7 +211,7 @@
       margin-top: 0;
       margin-bottom: 0;
 
-      font-weight: normal;
+      font-weight: 400;
       font-size: 16px;
       line-height: 22px;
       max-width: 224px;
@@ -221,7 +220,7 @@
 
   .discount__link--item {
     margin-top: 32px;
-}
+  }
 }
 
 @media (min-width: $desktop) {
@@ -281,5 +280,5 @@
 
   .discount__link--item {
     margin-top: 55px;
-}
+  }
 }
