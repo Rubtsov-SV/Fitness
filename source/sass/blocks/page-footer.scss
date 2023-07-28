@@ -35,9 +35,6 @@
     margin-bottom: 20px;
   }
 
-  &:nth-child(4) {
-    margin-top: 10px;
-  }
 }
 
 .page-footer__nav-link {
@@ -93,10 +90,6 @@
     }
     &:last-child {
       margin-right: 0;
-    }
-
-    &:nth-child(4) {
-      margin-top: 0;
     }
   }
 
@@ -159,9 +152,6 @@
       margin-right: 0;
     }
 
-    &:nth-child(4) {
-      margin-top: 0;
-    }
   }
 
   .page-footer__nav-item--logo {

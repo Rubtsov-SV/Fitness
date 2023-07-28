@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600&family=Roboto+Condensed:wght@300;400;700&display=swap"
-    rel="stylesheet">
-  <title>ProjectName</title>
+  <link rel="preload" href="fonts/Alumni-Sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Condensed-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <title>Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -80,11 +79,15 @@
         </div>
 
         <picture>
-          <!-- <source srcset="img/banner-photo.webp 1x, img/banner-photo@2x.webp 2x" type="image/webp"> -->
           <source media="(min-width:1200px)"
-            srcset="img\banner-photo-desktop.jpg 1x, img\banner-photo-desktop@2x.jpg 2x" width="500" height="556">
-          <source media="(min-width:768px)" src="img/banner-photo-tablet.jpg" srcset="img/banner-photo-tablet@2x.jpg 2x"
-            width="324" height="390" alt="Герой спортзала">
+            srcset="img/banner-photo-desktop.webp 1x, img/banner-photo-desktop@2x.webp 2x" type="image/webp" width="500"
+            height="556">
+          <source media="(min-width:768px)" srcset="img/banner-photo-tablet.webp 1x, img/banner-photo-tablet@2x.webp 2x"
+            type="image/webp" width="324" height="390">
+          <source media="(min-width:1200px)" srcset="img/banner-photo-desktop.jpg 1x,img/banner-photo-desktop@2x.jpg 2x"
+            width="500" height="556">
+          <source media="(min-width:768px)" srcset="img/banner-photo-tablet.jpg 1x, img/banner-photo-tablet@2x.jpg 2x"
+            width="324" height="390">
           <img class="banner__img" src="img/banner-photo-tablet.jpg" srcset="img/banner-photo-tablet@2x.jpg 2x"
             width="324" height="390" alt="Герой спортзала">
         </picture>
@@ -117,17 +120,22 @@
         <div class="info__video">
           <div class="info__video-player" id="video-player">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw"
-              title="YouTube video player" frameborder="0"
+              title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
           <div class="info__video-cover" id="video-img">
             <picture>
-              <!-- <source srcset="img/gym-video.webp 1x, img/gym-video@2x.webp 2x" type="image/webp"> -->
-              <source media="(min-width:1200px)" src="img\video-gym.jpg 1x" srcset="img\video-gym@2x.jpg 2x" width="364"
+              <source media="(min-width:1200px)" srcset="img/video-gym.webp 1x, img/video-gym@2x.webp 2x" width="364"
+                height="228" type="image/webp">
+              <source media="(min-width:768px)" srcset="img/video-gym-tablet.webp 1x, img/video-gym-tablet@2x.webp 2x"
+                width="266" height="167" type="image/webp">
+              <source media="(min-width:320px)" srcset="img/video-gym-mobil.webp 1x, img/video-gym-mobil@2x.webp 2x"
+                width="320" height="167" type="image/webp">
+              <source media="(min-width:1200px)" srcset="img/video-gym.jpg 1x, img/video-gym@2x.jpg 2x" width="364"
                 height="228">
-              <source media="(min-width:768px)" src="img/video-gym-tablet.jpg 1x" srcset="img/video-gym-tablet@2x.jpg 2x"
-                width="266" height="167" alt="Герой спортзала">
+              <source media="(min-width:768px)" srcset="img/video-gym-tablet.jpg 1x, img/video-gym-tablet@2x.jpg 2x"
+                width="266" height="167">
               <img src="img/video-gym-mobil.jpg" srcset="img/video-gym-mobil@2x.jpg 2x" width="320" height="167"
                 alt="Видеоэкскурсия по нашему тренажерному залу">
             </picture>
@@ -290,7 +298,7 @@
         </div>
 
         <picture>
-          <!-- <source srcset="img/photo-gym.webp 1x, img/photo-gym@2x.webp 2x" type="image/webp"> -->
+          <source srcset="img/games.webp 1x, img/games@2x.webp 2x" type="image/webp">
           <img class="games__img" src="img/games.jpg" srcset="img/games@2x.jpg 2x" width="660" height="500"
             alt="Соревнвоания по CrossFit">
         </picture>
@@ -306,7 +314,7 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp">
                       <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Анна Павлова">
                     </picture>
@@ -332,7 +340,7 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-alexey.webp 1x, img/trainer-alexey@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-alex.webp 1x, img/trainer-alex@2x.webp 2x" type="image/webp">
                       <img src="img/trainer-alex.jpg" srcset="img/trainer-alex@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Алексей Лавров">
                     </picture>
@@ -358,7 +366,8 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-alexander.webp 1x, img/trainer-alexander@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-alexander.webp 1x, img/trainer-alexander@2x.webp 2x"
+                        type="image/webp">
                       <img src="img/trainer-alexander.jpg" srcset="img/trainer-alexander@2x.jpg 2x" width="268"
                         height="294" alt="Тренер Александр Пашков">
                     </picture>
@@ -384,7 +393,7 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-maria.webp 1x, img/trainer-maria@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-maria.webp 1x, img/trainer-maria@2x.webp 2x" type="image/webp">
                       <img src="img/trainer-maria.jpg" srcset="img/trainer-maria@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Мария Кетова">
                     </picture>
@@ -410,7 +419,7 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-maria.webp 1x, img/trainer-maria@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-maria.webp 1x, img/trainer-maria@2x.webp 2x" type="image/webp">
                       <img src="img/trainer-maria.jpg" srcset="img/trainer-maria@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Мария Кетова">
                     </picture>
@@ -436,7 +445,8 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-alexander.webp 1x, img/trainer-alexander@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-alexander.webp 1x, img/trainer-alexander@2x.webp 2x"
+                        type="image/webp">
                       <img src="img/trainer-alexander.jpg" srcset="img/trainer-alexander@2x.jpg 2x" width="268"
                         height="294" alt="Тренер Александр Пашков">
                     </picture>
@@ -462,7 +472,7 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-alexey.webp 1x, img/trainer-alexey@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-alex.webp 1x, img/trainer-alex@2x.webp 2x" type="image/webp">
                       <img src="img/trainer-alex.jpg" srcset="img/trainer-alex@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Алексей Лавров">
                     </picture>
@@ -488,7 +498,7 @@
                 <div class="trainers__item">
                   <div class="trainers__img">
                     <picture>
-                      <!-- <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp"> -->
+                      <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp">
                       <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.jpg 2x" width="268" height="294"
                         alt="Тренер Анна Павлова">
                     </picture>
@@ -522,8 +532,8 @@
           <div class="advantages__container-info">
             <div class="advantages__block advantages__block--left advantages__block--top">
               <p class="advantages__block-wrapper">
-                <span class="advantages__block-number">900</span>
-                <span class="advantages__block-unit">кв/м</span>
+                <span>900</span>
+                <span>кв/м</span>
               </p>
               <div class="advantages__info">
                 <h3>Площадь</h3>
@@ -533,8 +543,8 @@
             </div>
             <div class="advantages__block advantages__block--right advantages__block--top">
               <p class="advantages__block-wrapper">
-                <span class="advantages__block-number">70</span>
-                <span class="advantages__block-unit">машин</span>
+                <span>70</span>
+                <span>машин</span>
               </p>
               <div class="advantages__info">
                 <h3>Собственная парковка</h3>
@@ -550,8 +560,8 @@
 
             <div class="advantages__block advantages__block--left advantages__block--bottom">
               <p class="advantages__block-wrapper">
-                <span class="advantages__block-number">350</span>
-                <span class="advantages__block-unit">мест</span>
+                <span>350</span>
+                <span>мест</span>
               </p>
               <div class="advantages__info">
                 <h3>Комфорт</h3>
@@ -561,8 +571,8 @@
             </div>
             <div class="advantages__block advantages__block--right advantages__block--bottom">
               <p class="advantages__block-wrapper">
-                <span class="advantages__block-number">5+</span>
-                <span class="advantages__block-unit">лет</span>
+                <span>5+</span>
+                <span>лет</span>
               </p>
               <div class="advantages__info">
                 <h3>Тренерский опыт</h3>
@@ -589,7 +599,7 @@
             </div>
             <div class="discount__img">
               <picture>
-                <!-- <source srcset="img/unlimited-bg.webp 1x, img/unlimited-bg@2x.webp 2x" type="image/webp"> -->
+                <source srcset="img/discount.webp 1x, img/discount@2x.webp 2x" type="image/webp">
                 <img src="img/discount.jpg" srcset="img/discount.jpg@2x.jpg 2x" width="280" height="462"
                   alt="Спортсменка">
               </picture>
@@ -814,9 +824,10 @@
                   <div class="feedback__item-wrapper">
                     <div class="feedback__img">
                       <picture>
-                        <!-- <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp"> -->
+                        <source srcset="img/feedback-icon.webp 1x, img/feedback-icon@2x.webp 2x" type="image/webp">
                         <img src="img/feedback-icon.png" srcset="img/feedback-icon@2x.png 2x" width="68" height="68"
                           alt="Аватар Анна Орлова">
+                      </picture>
                     </div>
                     <h3>Анна Орлова</h3>
                   </div>
@@ -830,9 +841,10 @@
                   <div class="feedback__item-wrapper">
                     <div class="feedback__img">
                       <picture>
-                        <!-- <source srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x" type="image/webp"> -->
+                        <source srcset="img/feedback-icon.webp 1x, img/feedback-icon@2x.webp 2x" type="image/webp">
                         <img src="img/feedback-icon.png" srcset="img/feedback-icon@2x.png 2x" width="80" height="80"
                           alt="Аватар Светлана Никитина">
+                      </picture>
                     </div>
                     <h3>Светлана Никитина</h3>
                   </div>
@@ -857,14 +869,14 @@
               <div class="contacts__feedback-block">
                 <div class="contacts__feedback-box">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input class="contacts__feedback-name" data-name="name" type="text" name="name" placeholder="Имя"
-                    required>
+                  <input id="name" class="contacts__feedback-name" data-name="name" type="text" name="name"
+                    placeholder="Имя" required>
                   <p class="contacts__erorr-name">Введно неверное имя</p>
                 </div>
                 <div class="contacts__feedback-box">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="contacts__feedback-phone" data-rules="tel" type="tel" name="tel" placeholder="Телефон"
-                    required>
+                  <input id="phone" class="contacts__feedback-phone" data-rules="tel" type="tel" name="tel"
+                    placeholder="Телефон" required>
                   <p class="contacts__erorr-phone">Введен не верный телефон</p>
                 </div>
               </div>

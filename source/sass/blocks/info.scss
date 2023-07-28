@@ -93,6 +93,10 @@
 
 .info__video-player {
   display: none;
+
+  iframe {
+    border: 0;
+  }
 }
 
 .info__video-button {
