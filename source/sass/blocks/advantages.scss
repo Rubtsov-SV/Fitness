@@ -165,7 +165,6 @@
     padding-left: 0;
     padding-right: 0;
     gap: 5px;
-    justify-content: stretch;
   }
 
   .advantages__block--right {
@@ -250,6 +249,12 @@
       margin-bottom: 5px;
     }
   }
+}
+
+@media (min-width: 1070px) and (max-width: 1199px) {
+  .advantages__container-info {
+    column-gap: 65px;
+}
 }
 
 @media (min-width: $desktop) {
