@@ -73,7 +73,7 @@
 
 .trainers__focus {
   height: 100%;
-  padding: 41px 23px 10px;
+  padding: 42px 24px 10px;
   text-align: center;
 
   color: $color-default-white;
@@ -86,12 +86,13 @@
     margin: 0;
 
     font-size: 16px;
-    line-height: 24px;
+    line-height: 19px;
     font-weight: 400;
   }
 }
 
 .trainers__focus-name {
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
 }
@@ -100,7 +101,7 @@
 
   list-style: none;
 
-  margin-top: 38px;
+  margin-top: 33px;
   padding-left: 11px;
 
   font-size: 14px;
@@ -204,6 +205,19 @@
     height: 294px;
   }
 
+  .trainers__focus {
+    padding: 51px 44px 10px;
+    text-align: center;
+
+    p {
+      margin-left: -8px;
+    }
+  }
+
+  .trainers__focus-name {
+    margin-left: -8px;
+}
+
   .trainers__button-prev,
   .trainers__button-next {
     bottom: 129px;
@@ -242,8 +256,15 @@
 
   .trainers__focus {
     height: 100%;
-    padding: 41px 23px 10px;
+    padding: 50px 43px 10px;
+
+    p {
+      margin-left: 0;
+    }
   }
+  .trainers__focus-name {
+    margin-left: 0;
+}
 
   .trainers__button-prev,
   .trainers__button-next {

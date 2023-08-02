@@ -25,7 +25,10 @@
 }
 
 .feedback__item {
-  width: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 78%;
   margin-left: auto;
   margin-right: auto;
   padding: 35px 25px;
@@ -46,12 +49,11 @@
     line-height: 22px;
     color: $color-default-white;
     margin: 0;
-    width: 176px;
+    width: 100%;
   }
 
   img {
     margin-top: 4px;
-    margin-left: 15px;
     width: 68px;
     height: 68px;
   }
@@ -181,6 +183,16 @@
     }
   }
 
+  .feedback__button-prev {
+    left: 155px;
+  }
+
+  .feedback__button-next {
+    right: 155px;
+  }
+}
+
+@media (min-width: 1366px) {
   .feedback__button-prev {
     left: 226px;
   }

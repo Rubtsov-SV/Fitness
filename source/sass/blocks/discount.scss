@@ -107,7 +107,7 @@
   color: #1c3374;
   border: 7px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(#d10a42 0%, #00359f 100%);
+  border-image-source: linear-gradient(150deg, #d10a42 0%, #00359f 100%);
 
   &:last-child {
     margin-bottom: 0;
@@ -257,7 +257,7 @@
 
   .discount__list {
     flex-direction: column;
-    min-width: 560px;
+    width: 100%;
     padding-top: 0;
     gap: 40px;
   }

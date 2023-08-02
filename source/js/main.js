@@ -124,12 +124,17 @@ const mySwiper = new Swiper('.swiper', {
     prevEl: '.trainers__button-prev',
   },
   breakpoints: {
-    768: {
+    650: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 30,
     },
     1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 40,
+    },
+    1366: {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 40,

@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 37px;
-  padding-bottom: 61px;
+  padding-bottom: 39px;
 
   background-color: $bg-color;
 }
@@ -33,9 +33,9 @@
   align-items: center;
 
   p {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
-    max-width: 227px;
+    width: calc(100% - 65px);
     font-size: 16px;
     line-height: 22px;
     font-weight: 300;
@@ -50,7 +50,7 @@
 .advantages__info {
   margin-left: auto;
   margin-right: auto;
-
+  width: 100%;
   text-align: center;
 
   h3 {
@@ -72,7 +72,7 @@
 }
 
 .advantages__block--right.advantages__block--top {
-  padding-bottom: 270px;
+  padding-bottom: 250px;
 }
 
 .advantages__block--right.advantages__block--bottom {
@@ -89,7 +89,7 @@
   top: 388px;
 
 
-  width: 320px;
+  width: 110%;
   min-height: 239px;
   margin-left: auto;
   margin-right: auto;
@@ -168,7 +168,7 @@
   }
 
   .advantages__block--right {
-    margin-left: 33px;
+    margin-left: 23px;
     padding-left: 0;
   }
 
@@ -178,10 +178,11 @@
 
   .advantages__block {
     flex-direction: row;
-    width: 316px;
+    width: 324px;
     align-items: start;
 
     p {
+      width: 227px;
       text-align: left;
     }
 
@@ -224,7 +225,7 @@
     h3 {
       text-align: left;
       margin-top: 0;
-      margin-bottom: 2px;
+      margin-bottom:6px;
       font-size: 20px;
     }
   }
@@ -300,7 +301,7 @@
 
 
   .advantages__block--left {
-    margin-right: 313px;
+    margin-right: 294px;
   }
 
   .advantages__block--bottom {
@@ -308,7 +309,7 @@
   }
 
   .advantages__block {
-    width: 328px;
+    width: 340px;
 
     p {
       text-align: left;

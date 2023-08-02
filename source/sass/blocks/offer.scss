@@ -27,7 +27,7 @@
 
   width: 100%;
   margin-bottom: 34px;
-  padding: 49px 60px 44px;
+  padding: 49px 35px 44px;
 
   background-color: $color-default-white;
 
@@ -109,7 +109,7 @@
 }
 
 .offer__button {
-  width: 208px;
+  width: 100%;
   padding: 26px;
 
   color: $text-color;
@@ -131,6 +131,10 @@
 }
 
 @media (min-width: $tablet) {
+  .offer {
+    position: relative;
+  }
+
   .offer__list {
     flex-direction: column;
     align-items: center;

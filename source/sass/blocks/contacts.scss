@@ -134,7 +134,7 @@
 
 @media (min-width: $tablet) {
   .contacts__feedback {
-    padding: 0 133px 66px;
+    padding: 0 133px 68px;
 
     h2 {
       font-family: $ff-alumni;
@@ -147,12 +147,16 @@
     }
   }
 
+  .contacts__feedback-box {
+    width: 100%;
+  }
+
   .contacts__feedback-form {
     input {
       background-color: inherit;
       border: none;
       border-bottom: 1px solid #74819c;
-      width: 206px;
+      width: 93%;
       padding: 8px 0;
       margin-bottom: 25px;
     }
@@ -182,16 +186,19 @@
   .contacts__info-wrapper {
     display: flex;
     gap: 96px;
-    position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 266px;
-      bottom: 31px;
-      width: 1px;
-      height: 127px;
-      background-color: #74819c;
+    .contacts__info-column:last-child {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: -47px;
+        bottom: 31px;
+        width: 1px;
+        height: 129px;
+        background-color: #74819c;
+      }
     }
   }
 }
@@ -203,6 +210,7 @@
 
   .contacts__feedback {
     padding: 0 151px 67px 102px;
+    flex-basis: 100%;
 
     h2 {
       font-family: $ff-alumni;
@@ -218,9 +226,13 @@
     display: flex;
   }
 
+  .contacts__feedback-box {
+    width: 100%;
+  }
+
   .contacts__feedback-form input {
 
-    width: 190px;
+    width: 93%;
     padding: 8px 0;
     margin-bottom: 25px;
   }
@@ -234,8 +246,9 @@
   }
 
   .contacts__info {
-    padding: 59px 136px 0 115px;
+    padding: 59px 99px 0 115px;
     margin-left: 7px;
+    flex-basis: 100%;
 
     h2 {
       font-size: 54px;
@@ -245,9 +258,10 @@
   }
 
   .contacts__info-wrapper {
+    gap: 0;
+    justify-content: space-between;
 
     margin-left: 5px;
-    gap: 121px;
 
     dt {
       font-size: 16px;
@@ -265,10 +279,34 @@
       margin: 0;
     }
 
-    &::after {
-      left: 230px;
-      bottom: 24px;
-      height: 104px;
+    .contacts__info-column:last-child {
+      position: relative;
+
+      &::after {
+        left: -25%;
+        bottom: 24px;
+        height: 102px;
+      }
     }
+  }
+}
+
+@media (min-width: 1366px) {
+  .contacts__info-wrapper {
+    .contacts__info-column:last-child {
+      margin-right: 23px;
+
+      &::after {
+        left: -55%;
+      }
+    }
+  }
+
+  .contacts__feedback {
+    padding: 0 151px 67px 102px;
+  }
+
+  .contacts__info {
+    padding: 59px 136px 0 115px;
   }
 }

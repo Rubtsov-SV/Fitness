@@ -45,6 +45,7 @@
   justify-content: space-between;
   padding-bottom: 12px;
   gap: 35px;
+  align-items: center;
 }
 
 .answer__item-icon {
@@ -130,7 +131,7 @@
   .answer__item-icon {
     margin: 0;
     background-size: 42px;
-    width: 42px;
+    min-width: 42px;
     height: 42px;
     margin-top: -9px;
 
