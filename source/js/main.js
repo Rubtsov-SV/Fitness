@@ -126,17 +126,17 @@ const mySwiper = new Swiper('.swiper', {
   breakpoints: {
     650: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       spaceBetween: 30,
     },
     1200: {
       slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
       spaceBetween: 40,
     },
     1366: {
       slidesPerView: 4,
-      slidesPerGroup: 4,
+      slidesPerGroup: 1,
       spaceBetween: 40,
     },
   },
@@ -217,7 +217,6 @@ if (answerButton) {
 // Слайдер отзывы
 
 const swiperFeedback = new Swiper('.feedback__slider', {
-  loop: true,
   navigation: {
     nextEl: '.feedback__button-next',
     prevEl: '.feedback__button-prev',
@@ -240,7 +239,7 @@ const eventPhone = () => {
       checkPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7}$/.test(value);
       break;
   }
-  if (!checkPhone) {
+  if (!checkPhone || checkPhone.lenght === 0) {
     erorrPhone.style.display = 'block';
     input.style.borderBottomColor = '#FF121F';
     return false;
@@ -285,3 +284,12 @@ form.addEventListener('submit', (event) => {
     return true;
   }
 });
+
+
+// Маска
+
+const phone = document.querySelector('#phone');
+
+if (phone) {
+  phone.mask('+{7}(000)000-00-00');
+}

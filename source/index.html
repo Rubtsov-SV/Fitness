@@ -75,7 +75,7 @@
             <li class="banner__services-item">Групповые занятия</li>
             <li class="banner__services-item">Кардио-зона</li>
           </ul>
-          <a class="banner-scroll button" href="#subscription">Купить абонемент</a>
+          <a class="banner-scroll button disabled" href="#subscription">Купить абонемент</a>
         </div>
 
         <picture>
@@ -109,39 +109,40 @@
             несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
-
-        <picture>
-          <!-- <source srcset="img/photo-gym.webp 1x, img/photo-gym@2x.webp 2x" type="image/webp"> -->
-          <source media="(min-width: 1200px)" srcset="img/photo-gym-desktop.jpg 1x, img/photo-gym-desktop@2x.jpg 2x">
-          <img class="info__img" src="img/photo-gym.jpg" srcset="img/photo-gym@2x.jpg 2x" width="660" height="401"
-            alt="Наш просторный зал и тренажеры">
-        </picture>
-
-        <div class="info__video">
-          <div class="info__video-player" id="video-player">
-            <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-          <div class="info__video-cover" id="video-img">
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/video-gym.webp 1x, img/video-gym@2x.webp 2x" width="364"
-                height="228" type="image/webp">
-              <source media="(min-width:768px)" srcset="img/video-gym-tablet.webp 1x, img/video-gym-tablet@2x.webp 2x"
-                width="266" height="167" type="image/webp">
-              <source media="(min-width:320px)" srcset="img/video-gym-mobil.webp 1x, img/video-gym-mobil@2x.webp 2x"
-                width="320" height="167" type="image/webp">
-              <source media="(min-width:1200px)" srcset="img/video-gym.jpg 1x, img/video-gym@2x.jpg 2x" width="364"
-                height="228">
-              <source media="(min-width:768px)" srcset="img/video-gym-tablet.jpg 1x, img/video-gym-tablet@2x.jpg 2x"
-                width="266" height="167">
-              <img src="img/video-gym-mobil.jpg" srcset="img/video-gym-mobil@2x.jpg 2x" width="320" height="167"
-                alt="Видеоэкскурсия по нашему тренажерному залу">
-            </picture>
-            <button class="info__video-button" id="video-button" type="button" aria-label="Посмотреть видео"></button>
+        <div class="info__media">
+          <picture>
+            <!-- <source srcset="img/photo-gym.webp 1x, img/photo-gym@2x.webp 2x" type="image/webp"> -->
+            <source media="(min-width: 1200px)" srcset="img/photo-gym-desktop.jpg 1x, img/photo-gym-desktop@2x.jpg 2x">
+            <img class="info__img" src="img/photo-gym.jpg" srcset="img/photo-gym@2x.jpg 2x" width="660" height="401"
+              alt="Наш просторный зал и тренажеры">
+          </picture>
+          <div class="info__video">
+            <div class="info__video-player" id="video-player">
+              <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="info__video-cover" id="video-img">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/video-gym.webp 1x, img/video-gym@2x.webp 2x" width="364"
+                  height="228" type="image/webp">
+                <source media="(min-width:768px)" srcset="img/video-gym-tablet.webp 1x, img/video-gym-tablet@2x.webp 2x"
+                  width="266" height="167" type="image/webp">
+                <source media="(min-width:320px)" srcset="img/video-gym-mobil.webp 1x, img/video-gym-mobil@2x.webp 2x"
+                  width="320" height="167" type="image/webp">
+                <source media="(min-width:1200px)" srcset="img/video-gym.jpg 1x, img/video-gym@2x.jpg 2x" width="364"
+                  height="228">
+                <source media="(min-width:768px)" srcset="img/video-gym-tablet.jpg 1x, img/video-gym-tablet@2x.jpg 2x"
+                  width="266" height="167">
+                <img src="img/video-gym-mobil.jpg" srcset="img/video-gym-mobil@2x.jpg 2x" width="320" height="167"
+                  alt="Видеоэкскурсия по нашему тренажерному залу">
+              </picture>
+              <button class="info__video-button" id="video-button" type="button" aria-label="Посмотреть видео"></button>
+            </div>
           </div>
         </div>
+
       </section>
 
       <div class="page-wrapper page-wrapper--subscription">
@@ -598,13 +599,6 @@
               <a class="discount__link" href="#">подробнее</a>
             </div>
             <div class="discount__img">
-              <picture>
-                <source media="(min-width:1200px)" srcset="img/discount-tablet.jpg 1x, img/discount-tablet@2x.jpg 2x"
-                  width="280" height="462" type="image/webp">
-                <source srcset="img/discount.webp 1x, img/discount@2x.webp 2x" type="image/webp">
-                <img src="img/discount.jpg" srcset="img/discount.jpg@2x.jpg 2x" width="280" height="462"
-                  alt="Спортсменка">
-              </picture>
             </div>
           </div>
           <div class="discount__list">
@@ -833,7 +827,8 @@
                     </div>
                     <h3>Анна Орлова</h3>
                   </div>
-                  <p class="feedback__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                  <p class="feedback__text">«Хожу
+                    в Supergym уже больше года. Нравится, что в клубе всегда чисто,
                     тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
               </div>
@@ -872,13 +867,13 @@
                 <div class="contacts__feedback-box">
                   <label class="visually-hidden" for="name">Имя</label>
                   <input id="name" class="contacts__feedback-name" data-name="name" type="text" name="name"
-                    placeholder="Имя" required>
+                    placeholder="Имя">
                   <p class="contacts__erorr-name">Введно неверное имя</p>
                 </div>
                 <div class="contacts__feedback-box">
                   <label class="visually-hidden" for="phone">Телефон</label>
                   <input id="phone" class="contacts__feedback-phone" data-rules="tel" type="tel" name="tel"
-                    placeholder="Телефон" required>
+                    placeholder="Телефон">
                   <p class="contacts__erorr-phone">Введен не верный телефон</p>
                 </div>
               </div>
@@ -903,7 +898,7 @@
                 <dl>
                   <dt>Телефон:</dt>
                   <dd>
-                    <a href="tel:88005555555" aria-label="Позвоните нам">8-800-555-55-55</a>
+                    <a class="contacts__phone" href="tel:88005555555" aria-label="Позвоните нам">8-800-555-55-55</a>
                   </dd>
                 </dl>
                 <dl>
@@ -965,7 +960,6 @@
               </svg>
             </a>
           </li>
-
         </ul>
       </div>
     </footer>

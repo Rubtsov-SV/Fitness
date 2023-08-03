@@ -2,8 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   padding-top: 15px;
+}
+
+.page-header__logo {
+  padding-right: 20px;
 }
 
 .page-header__phone {

@@ -86,6 +86,10 @@
   }
 }
 
+.contacts__phone {
+  display: block;
+}
+
 .contacts__info-wrapper {
   color: #102654;
 
@@ -194,9 +198,9 @@
         content: "";
         position: absolute;
         left: -47px;
-        bottom: 31px;
+        top: 6px;
         width: 1px;
-        height: 129px;
+        height: 80%;
         background-color: #74819c;
       }
     }
@@ -285,7 +289,7 @@
       &::after {
         left: -25%;
         bottom: 24px;
-        height: 102px;
+        height: 80%;
       }
     }
   }

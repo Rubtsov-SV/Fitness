@@ -163,7 +163,9 @@
   .feedback__button-prev,
   .feedback__button-next {
 
-    bottom: 104px;
+    bottom: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
     height: 32px;
   }
 }
