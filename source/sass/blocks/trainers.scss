@@ -142,9 +142,8 @@
   position: absolute;
   bottom: 127px;
 
-  width: 20px;
-  height: 19px;
-  padding: 0;
+  width: 35px;
+  height: 35px;
 
   font: inherit;
 
@@ -160,21 +159,28 @@
   &::after {
     display: none;
   }
-
-  &:hover,
-  &:focus {
-    opacity: 0.5;
-  }
 }
 
 .trainers__button-prev {
   left: 0;
-  background-image: url("../img/svg/icon-prev.svg");
+  background-image: url("../img/arrow-prev-phone.png");
+
+  &:hover,
+  &:focus {
+    border: 1px solid $price-shadow-color;
+    border-radius: 50%;
+  }
 }
 
 .trainers__button-next {
   right: 0;
-  background-image: url("../img/svg/icon-next.svg");
+  background-image: url("../img/arrow-next-phone.png");
+
+  &:hover,
+  &:focus {
+    border: 1px solid $price-shadow-color;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -216,14 +222,22 @@
 
   .trainers__focus-name {
     margin-left: -8px;
-}
+  }
 
   .trainers__button-prev,
   .trainers__button-next {
     bottom: 129px;
-    width: 18px;
-    height: 32px;
+    width: 46px;
+    height: 46px;
     padding: 0;
+  }
+
+  .trainers__button-prev {
+    background-image: url("../img/arrow-prev-tablet.png");
+  }
+
+  .trainers__button-next {
+    background-image: url("../img/arrow-next-tablet.png");
   }
 }
 
@@ -270,8 +284,8 @@
   .trainers__button-next {
     top: 45%;
 
-    width: 16px;
-    height: 32px;
+    width: 46px;
+    height: 46px;
   }
 
   .trainers__button-prev {

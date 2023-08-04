@@ -3061,7 +3061,7 @@ button,
   font-weight: 700;
   font-size: 80px;
   line-height: 120px;
-  color: #e8e8e8;
+  color: #afafaf;
 }
 
 .offer__rub {
@@ -3485,11 +3485,10 @@ button,
 .trainers__button-next {
   position: absolute;
   bottom: 127px;
-  width: 20px;
-  height: 19px;
-  padding: 0;
+  width: 35px;
+  height: 35px;
   font: inherit;
-  color: #e8e8e8;
+  color: #afafaf;
   background: center no-repeat;
   border: none;
   opacity: 1;
@@ -3500,20 +3499,23 @@ button,
 .trainers__button-next::after {
   display: none;
 }
-.trainers__button-prev:hover, .trainers__button-prev:focus,
-.trainers__button-next:hover,
-.trainers__button-next:focus {
-  opacity: 0.5;
-}
 
 .trainers__button-prev {
   left: 0;
-  background-image: url("../img/svg/icon-prev.svg");
+  background-image: url("../img/arrow-prev-phone.png");
+}
+.trainers__button-prev:hover, .trainers__button-prev:focus {
+  border: 1px solid #afafaf;
+  border-radius: 50%;
 }
 
 .trainers__button-next {
   right: 0;
-  background-image: url("../img/svg/icon-next.svg");
+  background-image: url("../img/arrow-next-phone.png");
+}
+.trainers__button-next:hover, .trainers__button-next:focus {
+  border: 1px solid #afafaf;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
@@ -3555,9 +3557,15 @@ button,
   .trainers__button-prev,
 .trainers__button-next {
     bottom: 129px;
-    width: 18px;
-    height: 32px;
+    width: 46px;
+    height: 46px;
     padding: 0;
+  }
+  .trainers__button-prev {
+    background-image: url("../img/arrow-prev-tablet.png");
+  }
+  .trainers__button-next {
+    background-image: url("../img/arrow-next-tablet.png");
   }
 }
 @media (min-width: 1200px) {
@@ -3595,8 +3603,8 @@ button,
   .trainers__button-prev,
 .trainers__button-next {
     top: 45%;
-    width: 16px;
-    height: 32px;
+    width: 46px;
+    height: 46px;
   }
   .trainers__button-prev {
     left: -56px;
@@ -4611,7 +4619,7 @@ button,
   height: 19px;
   padding: 0;
   font: inherit;
-  color: #e8e8e8;
+  color: #afafaf;
   background: center no-repeat;
   border: none;
   opacity: 1;

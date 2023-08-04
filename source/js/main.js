@@ -211,6 +211,13 @@ if (answerButton) {
       evt.preventDefault();
       accordion(index);
     });
+
+    element.addEventListener('keyup', (evt) => {
+      evt.preventDefault();
+      if (evt.keyCode === 13) {
+        accordion(index);
+      }
+    });
   });
 }
 
@@ -291,5 +298,10 @@ form.addEventListener('submit', (event) => {
 const phone = document.querySelector('#phone');
 
 if (phone) {
-  phone.mask('+{7}(000)000-00-00');
+  IMask(
+      phone,
+      {
+        mask: '+{7}(000)000-00-00',
+      }
+  );
 }
