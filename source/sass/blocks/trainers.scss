@@ -233,10 +233,12 @@
   }
 
   .trainers__button-prev {
+    left: -15px;
     background-image: url("../img/arrow-prev-tablet.png");
   }
 
   .trainers__button-next {
+    right: -15px;
     background-image: url("../img/arrow-next-tablet.png");
   }
 }
@@ -282,17 +284,17 @@
 
   .trainers__button-prev,
   .trainers__button-next {
-    top: 45%;
+    top: 42%;
 
     width: 46px;
     height: 46px;
   }
 
   .trainers__button-prev {
-    left: -56px;
+    left: -69px;
   }
 
   .trainers__button-next {
-    right: -56px;
+    right: -69px;
   }
 }
