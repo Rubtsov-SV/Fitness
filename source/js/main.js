@@ -224,11 +224,26 @@ if (answerButton) {
 // Слайдер отзывы
 
 const swiperFeedback = new Swiper('.feedback__slider', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   navigation: {
     nextEl: '.feedback__button-next',
     prevEl: '.feedback__button-prev',
   },
 });
+
+// Маска
+
+const phone = document.querySelector('#phone');
+
+if (phone) {
+  IMask(
+      phone,
+      {
+        mask: '+{7}(000)000-00-00',
+      }
+  );
+}
 
 // Проверка на валидность формы
 
@@ -243,7 +258,7 @@ const eventPhone = () => {
   let checkPhone;
   switch (rules) {
     case 'tel':
-      checkPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7}$/.test(value);
+      checkPhone = /^([\+]?[7|8][\s-(]?[9][0-9]{2}[\s-)]?)?([\d]{3})[\s-]?([\d]{2})[\s-]?([\d]{2})$/.test(value);
       break;
   }
   if (!checkPhone || checkPhone.lenght === 0) {
@@ -266,10 +281,10 @@ const eventName = () => {
   let checkName;
   switch (name) {
     case 'name':
-      checkName = /^[a-zA-Z\-]+$/.test(value);
+      checkName = /^[а-яА-ЯёЁa-zA-Z0-9]+$/.test(value);
       break;
   }
-  if (!checkName) {
+  if (!checkName || checkName.lenght === 0) {
     erorrName.style.display = 'block';
     inputName.style.borderBottomColor = '#FF121F';
     return false;
@@ -281,7 +296,13 @@ const eventName = () => {
 };
 
 form.addEventListener('submit', (event) => {
-  if (eventPhone() === false || eventName() === false) {
+  if (eventPhone() === false && eventName() === false) {
+    event.preventDefault();
+    return false;
+  } else if (eventPhone() === false) {
+    event.preventDefault();
+    return false;
+  } else if (eventName() === false) {
     event.preventDefault();
     return false;
   } else {
@@ -292,16 +313,3 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
-// Маска
-
-const phone = document.querySelector('#phone');
-
-if (phone) {
-  IMask(
-      phone,
-      {
-        mask: '+{7}(000)000-00-00',
-      }
-  );
-}

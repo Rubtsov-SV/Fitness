@@ -197,10 +197,8 @@
   }
 
   .discount__img {
-    min-width: 399px;
     min-height: 462px;
     width: 100%;
-    height: 100%;
   }
 
   .discount__list {
@@ -237,7 +235,7 @@
   }
 
   .discount__link {
-    margin-top: 165px;
+    margin-top: 148px;
 
     &:focus {
       margin-top: 155px;
@@ -279,7 +277,6 @@
   }
 
   .discount__img {
-    min-width: 280px;
     background-image: url("../img/discount-tablet.jpg");
   }
 

@@ -179,6 +179,7 @@
   .advantages__block {
     flex-direction: row;
     width: 324px;
+    height: 100%;
     align-items: start;
 
     p {
@@ -286,6 +287,10 @@
   }
 
   .advantages__block--right.advantages__block--top {
+    padding-bottom: 134px;
+  }
+
+  .advantages__block--left.advantages__block--top {
     padding-bottom: 134px;
   }
 

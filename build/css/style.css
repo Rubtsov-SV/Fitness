@@ -3034,6 +3034,13 @@ button,
   border-width: 7px;
   border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
+.offer__item:focus .offer__button, .offer__item:hover .offer__button {
+  color: #ffffff;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 1;
+}
 .offer__item h3 {
   margin: 0;
   margin-bottom: 9px;
@@ -3080,7 +3087,7 @@ button,
   font-weight: 700;
   font-size: 80px;
   line-height: 120px;
-  color: #afafaf;
+  color: #e8e8e8;
 }
 
 .offer__rub {
@@ -3096,13 +3103,6 @@ button,
   color: #102654;
   -webkit-box-shadow: inset 0 0 0 2px #102654;
           box-shadow: inset 0 0 0 2px #102654;
-}
-.offer__button:focus, .offer__button:hover {
-  color: #ffffff;
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  opacity: 1;
 }
 .offer__button:active {
   color: rgba(255, 255, 255, 0.7);
@@ -3156,7 +3156,7 @@ button,
     margin-top: 2px;
   }
   .offer__item {
-    width: 31%;
+    width: 30%;
     max-width: 360px;
     margin-bottom: 35px;
     padding: 59px 68px 60px;
@@ -3203,7 +3203,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 202px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 .games__block h2 {
   font-family: "Alumni Sans", sans-serif;
@@ -3363,7 +3365,7 @@ button,
     margin-left: 5px;
   }
   .games__button {
-    width: 343px;
+    width: 93%;
     height: 67px;
     margin: 0 20px;
     font-size: 12px;
@@ -3379,7 +3381,6 @@ button,
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.01rem;
-    margin-left: -47px;
     margin-bottom: 46px;
   }
 }
@@ -3451,6 +3452,7 @@ button,
   height: 100%;
   padding: 42px 24px 10px;
   text-align: center;
+  overflow-y: auto;
   color: #ffffff;
   background-color: rgba(16, 38, 84, 0.9);
   opacity: 0;
@@ -3507,7 +3509,7 @@ button,
   width: 35px;
   height: 35px;
   font: inherit;
-  color: #afafaf;
+  color: #e8e8e8;
   background: center no-repeat;
   border: none;
   opacity: 1;
@@ -3524,7 +3526,7 @@ button,
   background-image: url("../img/arrow-prev-phone.png");
 }
 .trainers__button-prev:hover, .trainers__button-prev:focus {
-  border: 1px solid #afafaf;
+  border: 1px solid #e8e8e8;
   border-radius: 50%;
 }
 
@@ -3533,7 +3535,7 @@ button,
   background-image: url("../img/arrow-next-phone.png");
 }
 .trainers__button-next:hover, .trainers__button-next:focus {
-  border: 1px solid #afafaf;
+  border: 1px solid #e8e8e8;
   border-radius: 50%;
 }
 
@@ -3602,10 +3604,10 @@ button,
     text-align: left;
   }
   .trainers__wrapper {
-    max-width: 1160px;
+    max-width: 860px;
   }
   .trainers__slider {
-    max-width: 1160px;
+    max-width: 860px;
   }
   .trainers__item {
     width: 260px;
@@ -3632,6 +3634,14 @@ button,
   }
   .trainers__button-next {
     right: -69px;
+  }
+}
+@media (min-width: 1366px) {
+  .trainers__wrapper {
+    max-width: 1160px;
+  }
+  .trainers__slider {
+    max-width: 1160px;
   }
 }
 .swiper-slide {
@@ -3822,6 +3832,7 @@ button,
         -ms-flex-direction: row;
             flex-direction: row;
     width: 324px;
+    height: 100%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -3921,6 +3932,9 @@ button,
     margin-bottom: 39px;
   }
   .advantages__block--right.advantages__block--top {
+    padding-bottom: 134px;
+  }
+  .advantages__block--left.advantages__block--top {
     padding-bottom: 134px;
   }
   .advantages__block--top::after {
@@ -4197,10 +4211,8 @@ button,
     padding: 34px 35px 24px 45px;
   }
   .discount__img {
-    min-width: 399px;
     min-height: 462px;
     width: 100%;
-    height: 100%;
   }
   .discount__list {
     -webkit-box-orient: horizontal;
@@ -4235,7 +4247,7 @@ button,
     max-width: 224px;
   }
   .discount__link {
-    margin-top: 165px;
+    margin-top: 148px;
   }
   .discount__link:focus {
     margin-top: 155px;
@@ -4270,7 +4282,6 @@ button,
     margin-bottom: 25px;
   }
   .discount__img {
-    min-width: 280px;
     background-image: url("../img/discount-tablet.jpg");
   }
   .discount__list {
@@ -4653,7 +4664,7 @@ button,
   height: 30px;
   padding: 0;
   font: inherit;
-  color: #afafaf;
+  color: #e8e8e8;
   background: center no-repeat;
   border: none;
   opacity: 1;
@@ -4667,7 +4678,7 @@ button,
 .feedback__button-prev:hover, .feedback__button-prev:focus,
 .feedback__button-next:hover,
 .feedback__button-next:focus {
-  border: 1px solid #afafaf;
+  border: 1px solid #e8e8e8;
   border-radius: 50%;
 }
 
@@ -4795,7 +4806,7 @@ button,
 .contacts__feedback-name {
   background-color: inherit;
   border: none;
-  border-bottom: 1px solid #74819c;
+  border-bottom: 1px solid rgba(116, 129, 156, 0.5);
   width: 100%;
   padding: 7px 0;
   margin-bottom: 26px;
@@ -4833,6 +4844,9 @@ button,
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+.contacts__feedback-name:hover {
+  border-bottom: 1px solid rgb(116, 129, 156);
 }
 
 .contacts__feedback-phone {
@@ -4965,10 +4979,13 @@ button,
   .contacts__feedback-form input {
     background-color: inherit;
     border: none;
-    border-bottom: 1px solid #74819c;
+    border-bottom: 1px solid rgba(116, 129, 156, 0.5);
     width: 93%;
     padding: 8px 0;
     margin-bottom: 25px;
+  }
+  .contacts__feedback-form input:hover {
+    border-bottom: 1px solid rgb(116, 129, 156);
   }
   .contacts__feedback-button {
     width: calc(100% - 27px);
@@ -5056,7 +5073,7 @@ button,
     letter-spacing: 0.1rem;
   }
   .contacts__info-wrapper {
-    gap: 0;
+    gap: 96px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

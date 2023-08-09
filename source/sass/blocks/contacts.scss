@@ -23,7 +23,7 @@
 .contacts__feedback-name {
   background-color: inherit;
   border: none;
-  border-bottom: 1px solid #74819c;
+  border-bottom: 1px solid rgba(116, 129, 156, 0.5);
   width: 100%;
   padding: 7px 0;
   margin-bottom: 26px;
@@ -38,6 +38,10 @@
     font-size: 14px;
     line-height: 16px;
     color: $color-default-white;
+  }
+
+  &:hover {
+    border-bottom: 1px solid rgba(116, 129, 156);
   }
 }
 
@@ -159,11 +163,16 @@
     input {
       background-color: inherit;
       border: none;
-      border-bottom: 1px solid #74819c;
+      border-bottom: 1px solid rgba(116, 129, 156, 0.5);
       width: 93%;
       padding: 8px 0;
       margin-bottom: 25px;
+
+      &:hover {
+        border-bottom: 1px solid rgba(116, 129, 156);
+      }
     }
+
   }
 
   .contacts__feedback-button {
@@ -262,7 +271,7 @@
   }
 
   .contacts__info-wrapper {
-    gap: 0;
+    gap: 96px;
     justify-content: space-between;
 
     margin-left: 5px;

@@ -75,6 +75,7 @@
   height: 100%;
   padding: 42px 24px 10px;
   text-align: center;
+  overflow-y: auto;
 
   color: $color-default-white;
   background-color: rgba($text-color, 0.9);
@@ -258,11 +259,12 @@
   }
 
   .trainers__wrapper {
-    max-width: 1160px;
+    max-width: 860px;
+
   }
 
   .trainers__slider {
-    max-width: 1160px;
+    max-width: 860px;
   }
 
   .trainers__item {
@@ -296,5 +298,15 @@
 
   .trainers__button-next {
     right: -69px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .trainers__wrapper {
+    max-width: 1160px;
+  }
+
+  .trainers__slider {
+    max-width: 1160px;
   }
 }
