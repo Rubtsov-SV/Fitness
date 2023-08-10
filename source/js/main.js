@@ -119,15 +119,16 @@ const mySwiper = new Swiper('.swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   loop: true,
+  spaceBetween: -39,
   navigation: {
     nextEl: '.trainers__button-next',
     prevEl: '.trainers__button-prev',
   },
   breakpoints: {
-    650: {
+    768: {
       slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 30,
+      spaceBetween: -39,
     },
     1200: {
       slidesPerView: 3,
@@ -226,6 +227,7 @@ if (answerButton) {
 const swiperFeedback = new Swiper('.feedback__slider', {
   slidesPerView: 1,
   slidesPerGroup: 1,
+  autoHeight: true,
   navigation: {
     nextEl: '.feedback__button-next',
     prevEl: '.feedback__button-prev',

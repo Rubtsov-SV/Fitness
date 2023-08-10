@@ -22,8 +22,8 @@
 .trainers__item {
   position: relative;
 
-  width: 226px;
-  height: 274px;
+  width: 78%;
+  min-height: 274px;
   margin-left: auto;
   margin-right: auto;
 
@@ -65,9 +65,9 @@
   z-index: -1;
 
   img {
-    height: 100%;
-
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    min-height: 274px;
   }
 }
 
@@ -141,7 +141,7 @@
 .trainers__button-prev,
 .trainers__button-next {
   position: absolute;
-  bottom: 127px;
+  bottom: 117px;
 
   width: 35px;
   height: 35px;
@@ -163,24 +163,36 @@
 }
 
 .trainers__button-prev {
-  left: 0;
-  background-image: url("../img/arrow-prev-phone.png");
+  left: -14px;
+  background-image: url("../img/arrow-prev-tablet.png");
+  background-size: 10px 19px;
 
   &:hover,
   &:focus {
-    border: 1px solid $price-shadow-color;
-    border-radius: 50%;
+    background-image: url("../img/arrow-prev-focus.png");
+    background-size: 32px;
+  }
+
+  &:active {
+    background-image: url("../img/arrow-prev-active.png");
+    background-size: 32px;
   }
 }
 
 .trainers__button-next {
-  right: 0;
-  background-image: url("../img/arrow-next-phone.png");
+  right: -14px;
+  background-image: url("../img/arrow-next-tablet.png");
+  background-size: 10px 19px;
 
   &:hover,
   &:focus {
-    border: 1px solid $price-shadow-color;
-    border-radius: 50%;
+    background-image: url("../img/arrow-next-focus.png");
+    background-size: 32px;
+  }
+
+  &:active {
+    background-image: url("../img/arrow-next-active.png");
+    background-size: 32px;
   }
 }
 
@@ -199,17 +211,12 @@
 
   .trainers__wrapper {
     flex-direction: row;
-    max-width: 678px;
     margin: 0 auto;
   }
 
-  .trainers__slider {
-    max-width: 566px;
-  }
-
   .trainers__item {
-    width: 268px;
-    height: 294px;
+    width: 78%;
+    min-height: 294px;
   }
 
   .trainers__focus {
@@ -225,22 +232,45 @@
     margin-left: -8px;
   }
 
+  .trainers__img {
+    img {
+      min-height: 294px;
+    }
+  }
+
   .trainers__button-prev,
   .trainers__button-next {
-    bottom: 129px;
-    width: 46px;
-    height: 46px;
+    background-size: 16px 32px;
+    bottom: 118px;
+    width: 56px;
+    height: 56px;
     padding: 0;
   }
 
   .trainers__button-prev {
-    left: -15px;
-    background-image: url("../img/arrow-prev-tablet.png");
+    left: -20px;
+
+    &:hover,
+    &:focus {
+      background-size: 56px;
+    }
+
+    &:active {
+      background-size: 56px;
+    }
   }
 
   .trainers__button-next {
-    right: -15px;
-    background-image: url("../img/arrow-next-tablet.png");
+    right: -20px;
+
+    &:hover,
+    &:focus {
+      background-size: 56px;
+    }
+
+    &:active {
+      background-size: 56px;
+    }
   }
 }
 
@@ -259,17 +289,12 @@
   }
 
   .trainers__wrapper {
-    max-width: 860px;
+    max-width: 90%;
 
-  }
-
-  .trainers__slider {
-    max-width: 860px;
   }
 
   .trainers__item {
-    width: 260px;
-    min-height: 294px;
+    width: 100%;
   }
 
   .trainers__focus {
@@ -288,8 +313,8 @@
   .trainers__button-next {
     top: 42%;
 
-    width: 46px;
-    height: 46px;
+    width: 58px;
+    height: 58px;
   }
 
   .trainers__button-prev {
@@ -298,15 +323,5 @@
 
   .trainers__button-next {
     right: -69px;
-  }
-}
-
-@media (min-width: 1366px) {
-  .trainers__wrapper {
-    max-width: 1160px;
-  }
-
-  .trainers__slider {
-    max-width: 1160px;
   }
 }

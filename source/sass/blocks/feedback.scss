@@ -88,22 +88,40 @@
   &::after {
     display: none;
   }
-
-  &:hover,
-  &:focus {
-    border: 1px solid $price-shadow-color;
-    border-radius: 50%;
-  }
 }
 
 .feedback__button-prev {
   left: -10px;
-  background-image: url("../img/arrow-prev-phone.png");
+  background-image: url("../img/arrow-prev-tablet.png");
+  background-size: 10px 19px;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/arrow-prev-focus.png");
+    background-size: 32px;
+  }
+
+  &:active {
+    background-image: url("../img/arrow-prev-active.png");
+    background-size: 32px;
+  }
 }
 
 .feedback__button-next {
   right: -10px;
-  background-image: url("../img/arrow-next-phone.png");
+  background-image: url("../img/arrow-next-tablet.png");
+  background-size: 10px 19px;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/arrow-next-focus.png");
+    background-size: 32px;
+  }
+
+  &:active {
+    background-image: url("../img/arrow-next-active.png");
+    background-size: 32px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -164,20 +182,36 @@
 
   .feedback__button-prev,
   .feedback__button-next {
-
+    background-size: 16px 32px;
     bottom: calc(50% - 25px);
-    width: 50px;
-    height: 50px;
+    width: 58px;
+    height: 58px;
   }
 
   .feedback__button-prev {
     left: -18px;
-    background-image: url("../img/arrow-prev-tablet.png");
+
+    &:hover,
+    &:focus {
+      background-size: 56px;
+    }
+
+    &:active {
+      background-size: 56px;
+    }
   }
 
   .feedback__button-next {
     right: -18px;
-    background-image: url("../img/arrow-next-tablet.png");
+
+    &:hover,
+    &:focus {
+      background-size: 56px;
+    }
+
+    &:active {
+      background-size: 56px;
+    }
   }
 }
 
