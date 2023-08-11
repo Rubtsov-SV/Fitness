@@ -119,7 +119,7 @@ const mySwiper = new Swiper('.swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   loop: true,
-  spaceBetween: -39,
+  spaceBetween: -10,
   navigation: {
     nextEl: '.trainers__button-next',
     prevEl: '.trainers__button-prev',
@@ -128,7 +128,7 @@ const mySwiper = new Swiper('.swiper', {
     768: {
       slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: -39,
+      spaceBetween: -36,
     },
     1200: {
       slidesPerView: 3,

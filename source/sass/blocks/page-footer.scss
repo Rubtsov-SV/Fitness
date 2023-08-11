@@ -114,7 +114,9 @@
   .page-footer__nav-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0;
+    margin-left: 15px;
+    margin-top: 10px;
+    gap: 10px;
   }
 
   .page-footer__nav-item {
@@ -142,7 +144,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    margin-top: 22px;
+    margin-top: 17px;
 
     min-width: 82px;
     color: $color-default-white;
@@ -182,7 +184,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 24px;
+    margin-left: 7px;
+    gap: 21px;
   }
 
   .page-footer__nav-item {
@@ -202,6 +206,8 @@
 
   .page-footer__nav-logo {
     min-width: 88px;
+    margin-top: 25px;
+    margin-left: 2px;
 
     img {
       height: 32px;

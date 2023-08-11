@@ -183,13 +183,13 @@
   .feedback__button-prev,
   .feedback__button-next {
     background-size: 16px 32px;
-    bottom: calc(50% - 25px);
+    bottom: calc(50% - 28px);
     width: 58px;
     height: 58px;
   }
 
   .feedback__button-prev {
-    left: -18px;
+    left: -20px;
 
     &:hover,
     &:focus {
@@ -202,7 +202,7 @@
   }
 
   .feedback__button-next {
-    right: -18px;
+    right: -20px;
 
     &:hover,
     &:focus {
@@ -241,10 +241,10 @@
 
 @media (min-width: 1366px) {
   .feedback__button-prev {
-    left: 226px;
+    left: 222px;
   }
 
   .feedback__button-next {
-    right: 226px;
+    right: 222px;
   }
 }

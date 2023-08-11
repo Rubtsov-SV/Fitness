@@ -2495,7 +2495,9 @@ button,
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 0;
+    margin-left: 15px;
+    margin-top: 10px;
+    gap: 10px;
   }
   .page-footer__nav-item {
     margin-left: 0;
@@ -2518,7 +2520,7 @@ button,
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    margin-top: 22px;
+    margin-top: 17px;
     min-width: 82px;
     color: #ffffff;
   }
@@ -2560,7 +2562,9 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 20px;
+    margin-top: 24px;
+    margin-left: 7px;
+    gap: 21px;
   }
   .page-footer__nav-item {
     margin-bottom: 0;
@@ -2576,6 +2580,8 @@ button,
   }
   .page-footer__nav-logo {
     min-width: 88px;
+    margin-top: 25px;
+    margin-left: 2px;
   }
   .page-footer__nav-logo img {
     height: 32px;
@@ -3184,14 +3190,14 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 40px;
+    gap: 53px;
     margin-top: 2px;
   }
   .offer__item {
     width: 30%;
     max-width: 360px;
     margin-bottom: 35px;
-    padding: 59px 68px 60px;
+    padding: 59px 63px 60px;
   }
   .offer__item h3 {
     margin-bottom: 9px;
@@ -3360,8 +3366,7 @@ button,
     width: 660px;
   }
   .games__info {
-    padding-top: 85px;
-    padding-bottom: 87px;
+    padding: 85px 64px 87px 64px;
   }
   .games__block {
     margin-top: 0;
@@ -3373,11 +3378,12 @@ button,
     line-height: 78px;
     letter-spacing: 0.06rem;
     margin: 0;
-    margin-right: 5px;
+    margin: 0 5px 0 -22px;
     width: 201px;
   }
   .games__list {
-    padding-left: 25px;
+    padding-left: 0;
+    margin-left: -37px;
   }
   .games__item:first-child {
     margin-bottom: 9px;
@@ -3399,7 +3405,7 @@ button,
   .games__button {
     width: 93%;
     height: 67px;
-    margin: 0 20px;
+    margin: 0 -11px 0 -31px;
     font-size: 12px;
     line-height: 14px;
     -webkit-box-shadow: inset 0 0 0 4px #ffffff;
@@ -3414,6 +3420,7 @@ button,
     line-height: 27px;
     letter-spacing: 0.01rem;
     margin-bottom: 46px;
+    margin-left: -85px;
   }
 }
 .trainers {
@@ -3600,7 +3607,7 @@ button,
     margin: 0 auto;
   }
   .trainers__item {
-    width: 78%;
+    width: 75%;
     min-height: 294px;
   }
   .trainers__focus {
@@ -3645,7 +3652,7 @@ button,
 }
 @media (min-width: 1200px) {
   .trainers {
-    padding-bottom: 100px;
+    padding-bottom: 104px;
     padding-top: 108px;
   }
   .trainers h2 {
@@ -3656,7 +3663,7 @@ button,
     text-align: left;
   }
   .trainers__wrapper {
-    max-width: 90%;
+    max-width: 100%;
   }
   .trainers__item {
     width: 100%;
@@ -3673,15 +3680,15 @@ button,
   }
   .trainers__button-prev,
 .trainers__button-next {
-    top: 42%;
+    top: 40%;
     width: 58px;
     height: 58px;
   }
   .trainers__button-prev {
-    left: -69px;
+    left: -77px;
   }
   .trainers__button-next {
-    right: -69px;
+    right: -77px;
   }
 }
 .swiper-slide {
@@ -3689,6 +3696,22 @@ button,
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .trainers__slider .swiper-slide-active {
+    margin-left: 10px;
+  }
+  .trainers__slider .swiper-slide-next {
+    margin-left: -19px;
+  }
+}
+@media (min-width: 1366px) {
+  .trainers__slider .swiper-slide-active {
+    margin-left: 0;
+  }
+  .trainers__slider .swiper-slide-next {
+    margin-left: 0;
+  }
+}
 .advantages {
   padding-top: 37px;
   padding-bottom: 39px;
@@ -3970,6 +3993,7 @@ button,
     letter-spacing: 0.1rem;
     line-height: 64px;
     margin-bottom: 39px;
+    margin-top: 40px;
   }
   .advantages__block--right.advantages__block--top {
     padding-bottom: 134px;
@@ -4242,6 +4266,9 @@ button,
     line-height: 25px;
   }
   .discount__info-wrapper {
+    -webkit-box-flex: 40%;
+        -ms-flex: 40%;
+            flex: 40%;
     width: 100%;
     height: 100%;
     -webkit-box-align: start;
@@ -4251,6 +4278,9 @@ button,
     padding: 34px 35px 24px 45px;
   }
   .discount__img {
+    -webkit-box-flex: 58%;
+        -ms-flex: 58%;
+            flex: 58%;
     min-height: 462px;
     width: 100%;
   }
@@ -4287,7 +4317,7 @@ button,
     max-width: 224px;
   }
   .discount__link {
-    margin-top: 148px;
+    margin-top: 164px;
   }
   .discount__link:focus {
     margin-top: 155px;
@@ -4351,6 +4381,11 @@ button,
   }
   .discount__link--item:focus {
     margin-top: 63px;
+  }
+  .discount__info-wrapper {
+    -webkit-box-flex: 55%;
+        -ms-flex: 55%;
+            flex: 55%;
   }
 }
 .questions {
@@ -4794,12 +4829,12 @@ button,
   .feedback__button-prev,
 .feedback__button-next {
     background-size: 16px 32px;
-    bottom: calc(50% - 25px);
+    bottom: calc(50% - 28px);
     width: 58px;
     height: 58px;
   }
   .feedback__button-prev {
-    left: -18px;
+    left: -20px;
   }
   .feedback__button-prev:hover, .feedback__button-prev:focus {
     background-size: 56px;
@@ -4808,7 +4843,7 @@ button,
     background-size: 56px;
   }
   .feedback__button-next {
-    right: -18px;
+    right: -20px;
   }
   .feedback__button-next:hover, .feedback__button-next:focus {
     background-size: 56px;
@@ -4839,10 +4874,10 @@ button,
 }
 @media (min-width: 1366px) {
   .feedback__button-prev {
-    left: 226px;
+    left: 222px;
   }
   .feedback__button-next {
-    right: 226px;
+    right: 222px;
   }
 }
 .contacts {
@@ -5057,7 +5092,7 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 60px;
+    gap: 31px;
   }
   .contacts__info {
     padding: 62px 133px 0;
@@ -5119,7 +5154,7 @@ button,
     margin-bottom: 25px;
   }
   .contacts__feedback-block {
-    gap: 32px;
+    gap: 15px;
   }
   .contacts__feedback-button {
     width: calc(100% - 17px);

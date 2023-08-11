@@ -2,3 +2,23 @@
   list-style: none;
   height: auto;
 }
+
+@media(min-width: 768px) {
+  .trainers__slider .swiper-slide-active {
+    margin-left: 10px;
+  }
+
+  .trainers__slider .swiper-slide-next {
+    margin-left: -19px;
+  }
+}
+
+@media(min-width: 1366px) {
+  .trainers__slider .swiper-slide-active {
+    margin-left: 0;
+  }
+
+  .trainers__slider .swiper-slide-next {
+    margin-left: 0;
+  }
+}
