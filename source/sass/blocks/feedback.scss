@@ -240,6 +240,11 @@
 }
 
 @media (min-width: 1366px) {
+  .feedback__wrapper {
+    max-width: 1160px;
+    margin: 0  auto;
+  }
+
   .feedback__button-prev {
     left: 222px;
   }

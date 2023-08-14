@@ -131,7 +131,7 @@ const mySwiper = new Swiper('.swiper', {
       spaceBetween: -36,
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       slidesPerGroup: 1,
       spaceBetween: 40,
     },
@@ -228,6 +228,7 @@ const swiperFeedback = new Swiper('.feedback__slider', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   autoHeight: true,
+  centeredSlides: false,
   navigation: {
     nextEl: '.feedback__button-next',
     prevEl: '.feedback__button-prev',
@@ -260,7 +261,7 @@ const eventPhone = () => {
   let checkPhone;
   switch (rules) {
     case 'tel':
-      checkPhone = /^([\+]?[7|8][\s-(]?[9][0-9]{2}[\s-)]?)?([\d]{3})[\s-]?([\d]{2})[\s-]?([\d]{2})$/.test(value);
+      checkPhone = /^([\+]?[7|8][\s-(]?[0-9]{3}[\s-)]?)?([\d]{3})[\s-]?([\d]{2})[\s-]?([\d]{2})$/.test(value);
       break;
   }
   if (!checkPhone || checkPhone.lenght === 0) {

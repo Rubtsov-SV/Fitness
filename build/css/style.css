@@ -1307,6 +1307,7 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  overflow-x: hidden;
 }
 
 .rouble {
@@ -2088,7 +2089,18 @@ button,
 }
 
 .page-header__logo {
-  padding-right: 20px;
+  margin-right: 10px;
+  margin-left: -9px;
+  margin-top: -5px;
+  padding: 10px;
+}
+.page-header__logo:hover {
+  -webkit-box-shadow: inset 0 -1px 0 0 #fff;
+          box-shadow: inset 0 -1px 0 0 #fff;
+}
+.page-header__logo:active {
+  -webkit-box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset;
+          box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset;
 }
 
 .page-header__phone {
@@ -2115,7 +2127,14 @@ button,
 }
 @media (min-width: 1200px) {
   .page-header {
-    padding-top: 30px;
+    padding-top: 21px;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+  .page-header__logo {
+    margin-right: 10px;
+    margin-left: -9px;
+    margin-top: -1px;
   }
   .page-header__logo img {
     width: 122px;
@@ -2151,7 +2170,7 @@ button,
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 71px;
+  padding-top: 66px;
   font-family: "Alumni Sans", sans-serif;
   text-align: right;
   color: #ffffff;
@@ -2203,7 +2222,7 @@ button,
   .banner__text {
     width: calc(50% - 15px);
     margin-right: auto;
-    padding-top: 69px;
+    padding-top: 66px;
   }
   .banner__text span {
     font-size: 34px;
@@ -2225,7 +2244,7 @@ button,
   }
   .banner__img {
     display: block;
-    margin-top: 18px;
+    margin-top: 16px;
     width: 324px;
     height: 390px;
     background-color: #102654;
@@ -2260,7 +2279,7 @@ button,
             align-items: flex-end;
     width: 396px;
     margin-right: 64px;
-    padding-top: 93px;
+    padding-top: 81px;
     font-family: "Alumni Sans", sans-serif;
     text-align: right;
     color: #ffffff;
@@ -2287,7 +2306,7 @@ button,
   }
   .banner__services-list {
     position: absolute;
-    top: 269px;
+    top: 258px;
     right: 263px;
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
@@ -2301,7 +2320,7 @@ button,
     width: 234px;
   }
   .banner__img {
-    margin-top: -23px;
+    margin-top: -34px;
     margin-right: 200px;
     width: 500px;
     height: 556px;
@@ -2433,6 +2452,14 @@ button,
 .page-footer__nav-logo img {
   width: 68px;
 }
+.page-footer__nav-logo:hover {
+  -webkit-box-shadow: inset 0 -1px 0 0 #fff;
+          box-shadow: inset 0 -1px 0 0 #fff;
+}
+.page-footer__nav-logo:active {
+  -webkit-box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset;
+          box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset;
+}
 
 .page-footer__nav-link {
   font-weight: 400;
@@ -2520,7 +2547,9 @@ button,
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-left: -11px;
+    padding: 10px;
     min-width: 82px;
     color: #ffffff;
   }
@@ -2552,6 +2581,8 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
   }
   .page-footer__nav-list {
     display: -webkit-box;
@@ -2581,7 +2612,7 @@ button,
   .page-footer__nav-logo {
     min-width: 88px;
     margin-top: 25px;
-    margin-left: 2px;
+    margin-left: -8px;
   }
   .page-footer__nav-logo img {
     height: 32px;
@@ -2805,7 +2836,7 @@ button,
     padding-left: 0;
   }
   .info__text h2 {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 48px;
     line-height: 57px;
     letter-spacing: 0.09rem;
@@ -3067,7 +3098,7 @@ button,
   margin-right: 0;
 }
 .offer__item:focus, .offer__item:hover {
-  border: 7px solid;
+  border: 7px solid #ffffff;
   border-image-slice: 1;
   border-width: 7px;
   border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -3194,7 +3225,7 @@ button,
     margin-top: 2px;
   }
   .offer__item {
-    width: 30%;
+    width: 29%;
     max-width: 360px;
     margin-bottom: 35px;
     padding: 59px 63px 60px;
@@ -3210,6 +3241,11 @@ button,
   }
   .offer__button {
     width: 100%;
+  }
+}
+@media (min-width: 1366px) {
+  .offer__item {
+    width: 30%;
   }
 }
 .games {
@@ -3361,6 +3397,7 @@ button,
 @media (min-width: 1200px) {
   .games {
     margin-top: 120px;
+    max-width: 1366px;
   }
   .games__img {
     width: 660px;
@@ -3372,6 +3409,7 @@ button,
     margin-top: 0;
     margin-bottom: 9px;
     margin-left: 18px;
+    max-width: 800px;
   }
   .games__block h2 {
     font-size: 82px;
@@ -3404,6 +3442,7 @@ button,
   }
   .games__button {
     width: 93%;
+    max-width: 500px;
     height: 67px;
     margin: 0 -11px 0 -31px;
     font-size: 12px;
@@ -3420,7 +3459,6 @@ button,
     line-height: 27px;
     letter-spacing: 0.01rem;
     margin-bottom: 46px;
-    margin-left: -85px;
   }
 }
 .trainers {
@@ -3447,6 +3485,7 @@ button,
 .trainers__item {
   position: relative;
   width: 78%;
+  height: 100%;
   min-height: 274px;
   margin-left: auto;
   margin-right: auto;
@@ -3489,9 +3528,9 @@ button,
 
 .trainers__focus {
   height: 100%;
-  padding: 42px 24px 10px;
+  padding: 42px 24px 29px;
   text-align: center;
-  overflow-y: auto;
+  overflow-y: scroll;
   color: #ffffff;
   background-color: rgba(16, 38, 84, 0.9);
   opacity: 0;
@@ -3656,6 +3695,8 @@ button,
     padding-top: 108px;
   }
   .trainers h2 {
+    width: 1160px;
+    margin: 0 auto;
     font-size: 54px;
     line-height: 64px;
     letter-spacing: 0.1rem;
@@ -3663,10 +3704,12 @@ button,
     text-align: left;
   }
   .trainers__wrapper {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1160px;
   }
   .trainers__item {
     width: 100%;
+    max-height: 294px;
   }
   .trainers__focus {
     height: 100%;
@@ -3689,6 +3732,10 @@ button,
   }
   .trainers__button-next {
     right: -77px;
+  }
+  .trainers__img img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .swiper-slide {
@@ -4317,7 +4364,7 @@ button,
     max-width: 224px;
   }
   .discount__link {
-    margin-top: 164px;
+    margin-top: 149px;
   }
   .discount__link:focus {
     margin-top: 155px;
@@ -4347,12 +4394,18 @@ button,
             flex-direction: row;
     gap: 40px;
     width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+  .discount__info {
+    height: 100%;
   }
   .discount__info p {
     margin-bottom: 25px;
   }
   .discount__img {
     background-image: url("../img/discount-tablet.jpg");
+    background-position: center center;
   }
   .discount__list {
     -webkit-box-orient: vertical;
@@ -4474,10 +4527,12 @@ button,
 }
 @media (min-width: 1200px) {
   .questions {
-    padding-top: 78px;
+    padding-top: 123px;
     padding-bottom: 90px;
   }
   .questions h2 {
+    max-width: 1160px;
+    margin: 0 auto;
     font-size: 54px;
     line-height: 64px;
     letter-spacing: 0.1rem;
@@ -4491,6 +4546,8 @@ button,
     display: -ms-flexbox;
     display: flex;
     gap: 40px;
+    max-width: 1160px;
+    margin: 0 auto;
   }
   .questions__answer {
     -webkit-box-flex: 1;
@@ -4873,6 +4930,10 @@ button,
   }
 }
 @media (min-width: 1366px) {
+  .feedback__wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
   .feedback__button-prev {
     left: 222px;
   }
@@ -5144,6 +5205,8 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
   }
   .contacts__feedback-box {
     width: 100%;
@@ -5207,6 +5270,17 @@ button,
   }
   .contacts__feedback {
     padding: 0 151px 67px 102px;
+    position: relative;
+  }
+  .contacts__feedback::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 300%;
+    height: 336px;
+    background-color: #102654;
+    z-index: -1;
   }
   .contacts__info {
     padding: 59px 136px 0 115px;

@@ -237,6 +237,8 @@
 
   .contacts__wrapper {
     display: flex;
+    max-width: 1366px;
+    margin: 0  auto;
   }
 
   .contacts__feedback-box {
@@ -317,6 +319,18 @@
 
   .contacts__feedback {
     padding: 0 151px 67px 102px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 300%;
+      height: 336px;
+      background-color: #102654;
+      z-index: -1;
+    }
   }
 
   .contacts__info {

@@ -8,7 +8,18 @@
 }
 
 .page-header__logo {
-  padding-right: 20px;
+  margin-right: 10px;
+  margin-left: -9px;
+  margin-top: -5px;
+  padding: 10px;
+
+  &:hover {
+    box-shadow: inset 0 -1px 0 0 #fff;
+  }
+
+  &:active {
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset;
+  }
 }
 
 .page-header__phone {
@@ -42,7 +53,15 @@
 
 @media (min-width: $desktop) {
   .page-header {
-    padding-top: 30px;
+    padding-top: 21px;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    margin-right: 10px;
+    margin-left: -9px;
+    margin-top: -1px;
   }
 
   .page-header__logo {

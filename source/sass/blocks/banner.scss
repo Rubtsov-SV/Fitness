@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: flex-end;
 
-  padding-top: 71px;
+  padding-top: 66px;
 
   font-family: $ff-alumni;
   text-align: right;
@@ -76,7 +76,7 @@
   .banner__text {
     width: calc(50% - 15px);
     margin-right: auto;
-    padding-top: 69px;
+    padding-top: 66px;
 
     span {
       font-size: 34px;
@@ -104,7 +104,7 @@
 
   .banner__img {
     display: block;
-    margin-top: 18px;
+    margin-top: 16px;
     width: 324px;
     height: 390px;
     background-color: #102654;
@@ -133,7 +133,7 @@
 
     width: 396px;
     margin-right: 64px;
-    padding-top: 93px;
+    padding-top: 81px;
 
     font-family: $ff-alumni;
     text-align: right;
@@ -170,7 +170,7 @@
 
   .banner__services-list {
     position: absolute;
-    top: 269px;
+    top: 258px;
     right: 263px;
 
     font-family: $ff-roboto;
@@ -187,7 +187,7 @@
   }
 
   .banner__img {
-    margin-top: -23px;
+    margin-top: -34px;
     margin-right: 200px;
     width: 500px;
     height: 556px;

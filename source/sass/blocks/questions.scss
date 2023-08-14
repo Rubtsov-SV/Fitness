@@ -98,10 +98,12 @@
 
 @media (min-width: $desktop) {
   .questions {
-    padding-top: 78px;
+    padding-top: 123px;
     padding-bottom: 90px;
 
     h2 {
+      max-width: 1160px;
+      margin: 0 auto;
       font-size: 54px;
       line-height: 64px;
       letter-spacing: 0.1rem;
@@ -116,6 +118,8 @@
   .questions__box {
     display: flex;
     gap: 40px;
+    max-width: 1160px;
+    margin: 0 auto;
   }
 
   .questions__answer {

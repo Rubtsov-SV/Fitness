@@ -39,7 +39,7 @@
 
   &:focus,
   &:hover {
-    border: 7px solid;
+    border: 7px solid #ffffff;
     border-image-slice: 1;
     border-width: 7px;
     border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -178,7 +178,7 @@
   }
 
   .offer__item {
-    width: 30%;
+    width: 29%;
     max-width: 360px;
     margin-bottom: 35px;
     padding: 59px 63px 60px;
@@ -198,5 +198,10 @@
 
   .offer__button {
     width: 100%;
+  }
+}
+@media (min-width: 1366px) {
+  .offer__item {
+    width: 30%;
   }
 }

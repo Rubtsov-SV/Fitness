@@ -237,7 +237,7 @@
   }
 
   .discount__link {
-    margin-top: 164px;
+    margin-top: 149px;
 
     &:focus {
       margin-top: 155px;
@@ -270,9 +270,13 @@
     flex-direction: row;
     gap: 40px;
     width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
   }
 
   .discount__info {
+    height: 100%;
+
     p {
       margin-bottom: 25px;
     }
@@ -280,6 +284,7 @@
 
   .discount__img {
     background-image: url("../img/discount-tablet.jpg");
+    background-position: center center;
   }
 
   .discount__list {
