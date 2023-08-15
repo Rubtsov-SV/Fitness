@@ -1,6 +1,5 @@
 .info {
   margin: 0 auto;
-  max-width: 660px;
   width: 100%;
 
   position: relative;
@@ -58,7 +57,7 @@
   position: relative;
   bottom: 0;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   height: 167px;
 
   .info__video-cover {
@@ -88,6 +87,9 @@
 
   img {
     display: block;
+    width: 100%;
+    height: 167px;
+    object-fit: cover;
   }
 }
 
@@ -286,6 +288,11 @@
 
     &:active {
       background-size: 100px;
+    }
+  }
+  .info__video-cover {
+    img {
+      height: 228px;
     }
   }
 }
